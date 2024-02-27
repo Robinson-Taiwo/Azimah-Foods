@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Home.css';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
@@ -9,7 +9,7 @@ import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 
 import fs from '../assets/images/fs.png';
-import { galleryData } from './data';
+// import { galleryData } from './data';
 
 import tfm from '../assets/images/tfm.png';
 import appetite from '../assets/images/appetite.png';
@@ -34,7 +34,7 @@ import cwings from '../assets/images/cwings.jpg';
 import herringfish from '../assets/images/herringfish.jpeg';
 import hakefish from '../assets/images/hakefish.jpeg';
 import mackrel from '../assets/images/mackrel.jpeg';
-import logo from "../assets/icons/getlinked.svg"
+// import logo from "../assets/icons/getlinked.svg"
 import instagram from "../assets/icons/mdi_instagram.svg"
 import x from "../assets/icons/x.svg"
 import call from "../assets/icons/call.svg"
@@ -42,11 +42,11 @@ import location from "../assets/icons/location.svg"
 import facebook from "../assets/icons/facebook.svg"
 import linkedin from "../assets/icons/linkedin.svg"
 
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import ScrollTo from "gsap/ScrollToPlugin"
+// import ScrollTo from "gsap/ScrollToPlugin"
 
 
 
@@ -86,9 +86,9 @@ const Home: React.FC<HomeProps> = () => {
                 <Navbar handleScrollToSection={handleScrollToSection} />
             </div>
 
-{/* bgImage="/ffba.png" */}
+            {/* bgImage="/ffba.png" */}
 
-            <Parallax  strength={100} >
+            <Parallax strength={100} >
 
                 <div id='section0' className="hero-section-overlay">
 

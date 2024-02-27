@@ -1,7 +1,7 @@
 import { useState, FC, useEffect } from "react";
-import React from 'react';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+// import React from 'react';
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
 import menu from "../assets/icons/menu.svg"
 import "./Navbar.css";
 

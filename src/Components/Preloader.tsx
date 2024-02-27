@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Preloader.css'; // Import your preloader styles
 import frost from "../assets/icons/frost.svg"
 
