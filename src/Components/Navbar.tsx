@@ -21,7 +21,13 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
     // defining the scrolled state for storing the status of the scrolling
     const [scrolled, setScrolled] = useState(false);
 
+    const [clicked, setClicked] = useState<Boolean>(false)
 
+
+    const handleClicked = () => {
+        setClicked(!clicked)
+        console.log(clicked)
+    }
 
     useEffect(() => {
         // defining the handlescroll  function so that isScrolled is when the window.scrollY is greater than 0
@@ -31,6 +37,7 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
             // setting the scrolled value to the value of the  current scroll Y position
             setScrolled(isScrolled);
         };
+
 
         window.addEventListener('scroll', handleScroll);
 
@@ -48,12 +55,18 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
             </div>
 
             <div className="ham-menu">
-                <img src={menu} alt="" className="menu" />
+                <img onClick={handleClicked} src={menu} alt="" className="menu-bar" />
             </div>
 
-
-            <div className="navbar-section-links">
+            <div className={clicked ? "phone-menu" : "navbar-section-links"}>
                 <div className="navbar-section-items">
+
+                    <div onClick={() => setClicked(!clicked)}
+
+                        className="hidden-bug">
+
+                        cancle
+                    </div>
 
 
                     <div

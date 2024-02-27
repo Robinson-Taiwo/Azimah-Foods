@@ -3,6 +3,8 @@ import './Home.css';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
+import down from '../assets/icons/down.svg';
+
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 
@@ -40,10 +42,7 @@ import location from "../assets/icons/location.svg"
 import facebook from "../assets/icons/facebook.svg"
 import linkedin from "../assets/icons/linkedin.svg"
 
-
 import { Parallax, Background } from 'react-parallax';
-
-
 
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
@@ -87,9 +86,9 @@ const Home: React.FC<HomeProps> = () => {
                 <Navbar handleScrollToSection={handleScrollToSection} />
             </div>
 
+{/* bgImage="/ffba.png" */}
 
-
-            <Parallax bgImage="/ffba.png" strength={500} >
+            <Parallax  strength={100} >
 
                 <div id='section0' className="hero-section-overlay">
 
@@ -106,8 +105,8 @@ const Home: React.FC<HomeProps> = () => {
                                 Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
                             </div>
 
-                            <button className="asc-ctas border-white text-white">
-                                |s
+                            <button onClick={() => handleScrollToSection("section2")} className="asc-ctas border-white text-white">
+                                <img src={down} className='down-icon' alt="" />
                             </button>
 
 

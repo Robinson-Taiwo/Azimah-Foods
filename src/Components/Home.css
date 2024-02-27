@@ -7,8 +7,9 @@
   
 
   .Hero-section{
-    background-image: url(../assets/images/snow.jpg);
-   @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] ;
+    /* background-image: url(../assets/images/snow.jpg); */
+    
+   @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] bg-white ;
     
   }
 
@@ -19,8 +20,17 @@
 
   .hero-section-overlay{
     /* background: hsla(207, 82%, 54%, 1); */
-    @apply h-[100vh] bg-[rgb(11,24,35)]  bg-opacity-40;
+    @apply phone:h-[70vh] desktop:h-[100vh] ;
   }
+
+/* ay
+overl
+
+bg-[rgb(11,24,35)]  bg-opacity-40*/
+
+
+
+  
 
   /* bg-[#2893EA] */
   /* #4cca6a */
@@ -33,13 +43,13 @@
   }
 
   .hero-content-heading{
-    @apply desktop:text-[2.5rem] wide:text-[4rem] w-[100%] font-extrabold  text-[white] phone:text-[1.7rem] desktop:w-[80vw] wide:w-[60vw] desktop:text-center 
-  
+    @apply desktop:text-[2.5rem] wide:text-[4rem] w-[100%] font-extrabold  text-[#289EA]  phone:text-[1.7rem] desktop:w-[80vw] wide:w-[60vw] desktop:text-center 
+  /* text-[white] */
   }
 
 
   .hero-content-subheading{
- @apply w-[90%] phone:text-[0.7rem] desktop:text-[1rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw]
+ @apply w-[90%] phone:text-[0.8rem] desktop:text-[1rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw]
   }
 
 
@@ -116,6 +126,9 @@
 }
 
 
+.down-icon{
+  @apply h-[1.5rem] w-[1.5rem]
+}
 
 
 
@@ -129,11 +142,11 @@
 
   .ff-category{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[2rem] desktop:px-[3rem] rounded-md font-bold text-[#2893EA] text-[1.2rem] hover:bg-[#6ab0e9] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-110 transition-all phone:px-[2rem] phone:py-[1.5rem] phone:gap-[0.5rem] 
+    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[2rem] desktop:px-[3rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#6ab0e9] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-110 transition-all phone:px-[2rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[1.5rem] sphone:gap-[0.1rem] text-center 
   }
  
   .ff-category p{
-    @apply text-[0.8rem] wide:text-[1.02rem] text-black font-[black] text-center w-[9rem]; 
+    @apply text-[0.8rem] wide:text-[1.02rem] text-black font-[black] text-center sphone:w-[100%] sphone:text-[0.6rem] phone:w-[9rem]; 
   }
 
 
@@ -204,7 +217,7 @@
   color: #fff;
   border: 2px solid #fff;
   border-radius: 0px;
-  padding: 18px 36px;
+  /* padding: 18px 36px; */
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
@@ -214,7 +227,7 @@
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-  @apply phone:w-fit px-[0.7rem] py-[0.7rem] text-[0.7rem] desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%] animate-bounce mt-[4rem]
+  @apply phone:w-fit px-[0.7rem] py-[0.7rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%] animate-bounce mt-[4rem]
 }
 
 .asc-ctas:hover {
