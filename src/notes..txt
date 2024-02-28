@@ -27,3 +27,25 @@ export default function App() {
    </div>
  );
 }
+
+
+
+
+
+
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false);
+      console.log("window is loading")
+    };
+
+    // Attach the event listener for page load
+    window.addEventListener('load', handleLoad);
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);

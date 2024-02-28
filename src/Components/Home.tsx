@@ -1,16 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import './Home.css';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
 import down from '../assets/icons/down.svg';
-
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
-
 import fs from '../assets/images/fs.png';
 // import { galleryData } from './data';
-
 import tfm from '../assets/images/tfm.png';
 import appetite from '../assets/images/appetite.png';
 import logistics from '../assets/images/logistics.jpeg';
@@ -34,18 +30,12 @@ import cwings from '../assets/images/cwings.jpg';
 import herringfish from '../assets/images/herringfish.jpeg';
 import hakefish from '../assets/images/hakefish.jpeg';
 import mackrel from '../assets/images/mackrel.jpeg';
-// import logo from "../assets/icons/getlinked.svg"
-import instagram from "../assets/icons/mdi_instagram.svg"
-import x from "../assets/icons/x.svg"
-import call from "../assets/icons/call.svg"
-import location from "../assets/icons/location.svg"
-import facebook from "../assets/icons/facebook.svg"
-import linkedin from "../assets/icons/linkedin.svg"
-
-import { Parallax } from 'react-parallax';
-
+import './Home.css';
+// import { Parallax } from 'react-parallax';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { Link } from 'react-router-dom';
+import Footer from './Footer';
 // import ScrollTo from "gsap/ScrollToPlugin"
 
 
@@ -88,7 +78,7 @@ const Home: React.FC<HomeProps> = () => {
 
             {/* bgImage="/ffba.png" */}
 
-            <Parallax strength={100} >
+            <div className="Hero-section" >
 
                 <div id='section0' className="hero-section-overlay">
 
@@ -98,16 +88,22 @@ const Home: React.FC<HomeProps> = () => {
                         <div className="hero-section-content">
 
                             <h1 className="hero-content-heading">
-                                Experience Freshness, Variety, and Quality at Azimah Cold Food Store.
+                                Experience Freshness & Variety at Azimah Cold Food Store.
                             </h1>
 
                             <div className="hero-content-subheading">
                                 Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
                             </div>
 
-                            <button onClick={() => handleScrollToSection("section2")} className="asc-ctas border-white text-white">
-                                <img src={down} className='down-icon' alt="" />
-                            </button>
+
+                            <div className="button-cont">
+
+                                <button onClick={() => handleScrollToSection("section1")} className="asc-ctas text-white">
+                                    <img src={down} className='down-icon' alt="" />
+                                </button>
+
+                            </div>
+
 
 
                         </div>
@@ -127,7 +123,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
 
 
-            </Parallax>
+            </div>
 
             <div className="blur-blue">
 
@@ -147,7 +143,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                 <h1 className="cs-heading">
-                    Frozen food Categories
+                    What We Offer
                 </h1>
 
                 <h4 className="cs-subheading">
@@ -230,9 +226,9 @@ const Home: React.FC<HomeProps> = () => {
                         Welcome to Azimah Cold Food Store Nigeria Limited, a culinary haven for frozen food enthusiasts. Our journey began in 2014 at the Mandate exit gate in Ilorin, Kwara State, Nigeria. From these roots, we have rapidly grown to become a key player in the vibrant frozen food market.
                     </p>
 
-                    <button className="asc-cta">
+                    <Link to="/about" className="asc-cta">
                         learn more...
-                    </button>
+                    </Link>
 
                 </div>
 
@@ -446,95 +442,7 @@ const Home: React.FC<HomeProps> = () => {
 
             </section>
 
-            <div className='section-footer'>
-
-                <div className="footer-first-div">
-                    <div className="footer-first-section-col">
-
-                        <div className="footer-first-header">
-
-                            <img src={x} className='footer-logo' alt="" />
-
-
-                            <p className="footer-text">
-                                Getlinked Tech Hackathon is a technology
-                                innovation program established by a group
-                                of organizations with the aim of showcasing
-                                young and talented individuals in the field
-                                of technology
-                            </p>
-                        </div>
-
-
-                        <div className="demacate">
-                            Terms of Use <span className='patition'></span>  Privacy Policy
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div className="footer-col">
-
-                        <h2>Useful Links</h2>
-
-                        <p>Overview</p>
-                        <p>Timeline</p>
-
-                        <p>FAQs</p>
-                        <p>Register</p>
-
-                        <div>
-                            <h6 className='footer-socials' >follow us</h6>
-
-                            <img src={instagram} alt="" />
-                            <img src={x} alt="" />
-                            <img src={facebook} alt="" />
-                            <img src={linkedin} alt="" />
-
-
-                        </div>
-                    </div>
-
-                    <div className="footer-contacts">
-
-                        <h1>Contact Us</h1>
-
-                        <div>
-                            <img src={call} alt="" />
-
-                            <p>+234  6707653444</p>
-                        </div>
-
-
-                        <div>
-                            <img src={location} alt="" />
-
-                            <h2> 27,Alara Street
-                                Yaba 100012
-                                Lagos State</h2>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-                <div className="reserved">
-
-                    <p >
-                        All rights reserved. © getlinked Ltd.
-                    </p>
-                </div>
-
-
-
-            </div>
-
-
+<Footer/>
 
         </div>
     )

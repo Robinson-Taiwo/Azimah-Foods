@@ -8,8 +8,9 @@
 
   .Hero-section{
     /* background-image: url(../assets/images/snow.jpg); */
+    background: linear-gradient(225deg, hsla(0, 0%, 100%, 1) 30%, hsla(207, 82%, 54%, 1) 100%);
     
-   @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] bg-white ;
+   @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] ;
     
   }
 
@@ -20,7 +21,7 @@
 
   .hero-section-overlay{
     /* background: hsla(207, 82%, 54%, 1); */
-    @apply phone:h-[70vh] desktop:h-[100vh] ;
+    @apply phone:h-[70vh] desktop:h-[100vh] bg-black bg-opacity-10 ;
   }
 
 /* ay
@@ -39,7 +40,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
   .hero-section-content{
-    @apply h-[100%] desktop:w-[100%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem] phone:w-[100%] tablet:w-[70%] items-center 
+    @apply h-[100%] desktop:w-[100%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem] phone:w-[100%] tablet:w-[70%] desktop:items-center  phone:items-start
   }
 
   .hero-content-heading{
@@ -49,7 +50,11 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
   .hero-content-subheading{
- @apply w-[90%] phone:text-[0.8rem] desktop:text-[1rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw]
+ @apply w-[90%] phone:text-[0.85rem] desktop:text-[1.5rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw] text-[#373232]
+  }
+
+  .button-cont{
+    @apply w-[100%] items-center flex justify-center 
   }
 
 
@@ -102,7 +107,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
   .categories-section{
-    background: linear-gradient(180deg, hsla(207, 96%, 71%, 1) 0%, hsla(0, 0%, 100%, 1) 22%);
+    /* background: linear-gradient(180deg, hsla(207, 96%, 71%, 1) 0%, hsla(0, 0%, 100%, 1) 22%); */
     @apply w-[100vw] h-fit flex items-center  flex-col desktop:px-[3rem] phone:px-[1rem] relative phone:pt-[3rem]  desktop:pt-[10rem] mb-[9rem] wide:px-[4rem]
   }
 
@@ -137,7 +142,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
   .cs-subheading{
-    @apply text-center wide:text-[1.5rem] desktop:w-[60%] font-[black] mt-[1rem] mb-[4rem] text-[0.9rem] phone:w-[100%] tablet:w-[80%]
+    @apply text-center wide:text-[1.5rem] desktop:w-[60%] font-[black] mt-[1rem] mb-[4rem] text-[0.9rem] phone:w-[100%] tablet:w-[80%] text-[#373232]
   }
 
   .ff-category{
@@ -215,7 +220,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 .asc-ctas {
   color: #fff;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   border-radius: 0px;
   /* padding: 18px 36px; */
   display: inline-block;
@@ -225,9 +230,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #2893EA;
   -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s; 
   transition: ease-out 0.4s;
-  @apply phone:w-fit px-[0.7rem] py-[0.7rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%] animate-bounce mt-[4rem]
+  @apply phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%] animate-bounce mt-[4rem] bg-[#6db5ef] border-[2px]
 }
 
 .asc-ctas:hover {
@@ -281,114 +286,4 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 .pc-overlay4{
   
   @apply h-[100%] w-[100%] bg-[#3d3b3b] bg-no-repeat bg-center bg-cover flex absolute bg-opacity-30 hover:bg-opacity-55
-}
-
-
-.section-footer{
-  @apply bg-[#2893Ea] pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] desktop:pb-[3.04rem]
-}
-
-.footer-first-div{
-  @apply  relative desktop:flex desktop:flex-row desktop:justify-evenly
-}
-
-.footer-first-header{
-  @apply desktop:flex desktop:flex-col 
-}
-
-.footer-logo{
-  @apply w-[5.94rem] h-[1.56rem] mb-[0.75rem]
-}
-
-.footer-first-section-col{
-  @apply desktop:flex desktop:flex-col 
-}
-
-.footer-text{
-  @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] desktop:w-[27rem] 
-}
-
-.patition{
-width: 0.125rem;
-height: 1.0625rem;
-@apply text-white inline-block bg-[#24577b] mx-[0.5rem]
-}
-
-.demacate{
-  @apply text-white pb-[2rem]
-}
-
-.footer-col{
-  @apply text-white flex flex-col gap-[0.69rem] pb-[3.81rem] relative
-}
-
-.footer-col h2{
-  @apply text-[black] text-[0.875rem] font-semibold
-}
-
-.footer-col p{
-@apply text-white text-[0.75rem] 
-}
-
-.footer-socials{
-  @apply text-[black] text-[0.75rem]
-}
-
-.footer-col div{
-  @apply flex flex-row gap-[1.19rem] items-center 
-}
-
-.footer-contacts h1{
-  @apply text-[#000000] text-[0.875rem] font-semibold leading-[172.4%]
-}
-
-.footer-contacts div{
-  @apply flex flex-row gap-[1rem] 
-}
-
-.footer-contacts div p{
-  @apply text-white text-[0.75rem] 
-}
-
-.footer-contacts div h2{
-  @apply   text-white text-[0.75rem] w-[5.6rem]
-}
-
-.footer-contacts{
-  @apply gap-[1rem] flex flex-col pb-[3.75rem] relative
-}
-
-.reserved{
-  @apply text-white text-[0.75rem] w-[100%] flex justify-center items-center relative
-}
-
-.star {
-  width: 0.625rem;
-  height: 0.75rem;
-  flex-shrink: 0;
-}
-
-.star2 {
-  width: 0.375rem;
-  height: 0.5rem;
-  flex-shrink: 0;
-}
-
-.footer-star1{
-  @apply absolute left-[1rem] top-[7.5rem] desktop:hidden
-}
-
-.trans-star{
-  width: 0.9375rem;
-  height: 1.125rem;
-  flex-shrink: 0;
-  @apply absolute top-[4.5rem] left-[8rem]
-}
-
-.small-star{
-  @apply absolute top-[4rem] left-[90%]
-}
-
-.pupStar{
-  @apply absolute top-[-1.5rem] left-[5rem]
 }

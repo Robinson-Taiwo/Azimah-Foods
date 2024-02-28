@@ -3,15 +3,20 @@
 }
 
 .navbar-section-items{
-    @apply flex desktop:flex-row gap-[3rem] text-[1rem]  font-medium phone:flex-col phone:bg-[red] desktop:bg-transparent phone:items-start desktop:items-center phone:px-[1.5rem] desktop:px-[0rem] 
+  @apply  flex desktop:flex-row phone:z-[100] w-[100%] desktop:gap-[6rem] flex-col phone:fixed desktop:static phone:justify-center 
+}
+
+
+.links-small{
+    @apply flex desktop:flex-row gap-[3rem] text-[0.9rem]  font-medium   desktop:bg-transparent  desktop:items-center  desktop:px-[0rem]  phone:h-[100%] phone:flex-col
 }
 
 .isScrolled{
-    @apply fixed bg-opacity-55
+    @apply fixed bg-opacity-80
 }
 
 .navbar-item-contact{
-    @apply bg-[#2893EA] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%] 
+    @apply desktop:bg-[#2893EA] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[white] phone:text-[black] phone:items-center phone:justify-center flex
 }
 
 .navbar-section-logo{
@@ -23,11 +28,11 @@
 }
 
 .menu-bar{
-    @apply h-[100%] w-[100%]
+    @apply h-[100%] w-[100%] fixed z-[1000]
 }
 
 .navbar-item{
-    @apply text-[0.9rem]  text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem]
+    @apply text-[0.9rem]  text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem] desktop:w-[100%] 
 }
 
 .navbar-section-links{
@@ -47,18 +52,23 @@
     height: 2px; 
     width: 3rem;
     background-color: #00ffee; /* Set the desired color for the line */
-    
     width: 100%;
+    @apply phone:hidden desktop:flex
+   
 }
 .bg-change{
     @apply bg-[black]
 }
 
 .phone-menu{
-    @apply absolute flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] 
+    @apply fixed flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] bg-[#2893EA] z-[1000] pt-[3rem] 
 }
 
 
 .hidden-bug{
     @apply flex desktop:hidden
+}
+
+.but-c{
+    @apply w-[100%] flex items-center justify-center  mt-[3rem] desktop:mt-[0rem]
 }

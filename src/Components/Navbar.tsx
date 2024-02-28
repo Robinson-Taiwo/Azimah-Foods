@@ -4,6 +4,7 @@ import { useState, FC, useEffect } from "react";
 // import { useGSAP } from "@gsap/react";
 import menu from "../assets/icons/menu.svg"
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
     handleScrollToSection: (sectionId: string) => void;
@@ -61,56 +62,68 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
             <div className={clicked ? "phone-menu" : "navbar-section-links"}>
                 <div className="navbar-section-items">
 
-                    <div onClick={() => setClicked(!clicked)}
 
-                        className="hidden-bug">
+                    <div className="links-small">
+                        <div onClick={() => setClicked(!clicked)}
 
-                        cancle
+                            className="hidden-bug">
+
+                            cancle
+                        </div>
+
+
+                        <Link to="/"
+                            onClick={() => handleItemClick('section0')}
+                            className={`navbar-item ${activeItem === 'section0' ? 'active' : ''}`}
+                        >
+
+                            <p>                        Home
+                            </p>
+
+                            {activeItem === 'section0' && <div className="active-line"></div>}
+                        </Link>
+
+                        <div
+                            onClick={() => handleItemClick('section1')}
+                            className={`navbar-item ${activeItem === 'section1' ? 'active' : ''}`}
+                        >
+                            Categories
+                            {activeItem === 'section1' && <div className="active-line"></div>}
+                        </div>
+                        <div
+                            onClick={() => handleItemClick('section2')}
+                            className={`navbar-item ${activeItem === 'section2' ? 'active' : ''}`}
+                        >
+                            About
+                            {activeItem === 'section2' && <div className="active-line"></div>}
+                        </div>
+                        <div
+                            onClick={() => handleItemClick('products')}
+                            className={`navbar-item ${activeItem === 'products' ? 'active' : ''}`}
+                        >
+                            Products
+                            {activeItem === 'products' && <div className="active-line"></div>}
+                        </div>
+
                     </div>
 
 
-                    <div
-                        onClick={() => handleItemClick('section0')}
-                        className={`navbar-item ${activeItem === 'section0' ? 'active' : ''}`}
-                    >
 
-                        <p>                        Home
-                        </p>
+                    <div className="but-c">
 
-                        {activeItem === 'section0' && <div className="active-line"></div>}
+                        <div
+                            onClick={() => handleItemClick('contact')}
+                            className={`navbar-item-contact ${activeItem === 'contact' ? 'active' : ''}`}
+                        >
+                            Contact us
+
+                        </div>
                     </div>
 
-                    <div
-                        onClick={() => handleItemClick('section1')}
-                        className={`navbar-item ${activeItem === 'section1' ? 'active' : ''}`}
-                    >
-                        Categories
-                        {activeItem === 'section1' && <div className="active-line"></div>}
-                    </div>
-                    <div
-                        onClick={() => handleItemClick('section2')}
-                        className={`navbar-item ${activeItem === 'section2' ? 'active' : ''}`}
-                    >
-                        About
-                        {activeItem === 'section2' && <div className="active-line"></div>}
-                    </div>
-                    <div
-                        onClick={() => handleItemClick('products')}
-                        className={`navbar-item ${activeItem === 'products' ? 'active' : ''}`}
-                    >
-                        Products
-                        {activeItem === 'products' && <div className="active-line"></div>}
-                    </div>
+
 
                 </div>
 
-                <div
-                    onClick={() => handleItemClick('contact')}
-                    className={`navbar-item-contact ${activeItem === 'contact' ? 'active' : ''}`}
-                >
-                    Contact us
-
-                </div>
             </div>
         </div>
     )

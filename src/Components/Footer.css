@@ -1,0 +1,110 @@
+
+
+.section-footer{
+    @apply bg-[#2893Ea] pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] desktop:pb-[3.04rem]
+  }
+  
+  .footer-first-div{
+    @apply  relative desktop:flex desktop:flex-row desktop:justify-evenly
+  }
+  
+  .footer-first-header{
+    @apply desktop:flex desktop:flex-col 
+  }
+  
+  .footer-logo{
+    @apply w-[5.94rem] h-[1.56rem] mb-[0.75rem]
+  }
+  
+  .footer-first-section-col{
+    @apply desktop:flex desktop:flex-col 
+  }
+  
+  .footer-text{
+    @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] desktop:w-[27rem] 
+  }
+  
+  .patition{
+  width: 0.125rem;
+  height: 1.0625rem;
+  @apply text-white inline-block bg-[#24577b] mx-[0.5rem]
+  }
+  
+  .demacate{
+    @apply text-white pb-[2rem]
+  }
+  
+  .footer-col{
+    @apply text-black flex flex-col gap-[0.69rem] pb-[3.81rem] relative
+  }
+  
+  .footer-col h2{
+    @apply text-[white] text-[0.875rem] font-semibold
+  }
+  
+  .lmao{
+  @apply text-[#e5dfdf] text-[0.75rem] 
+  }
+  
+  .footer-socials{
+    @apply text-[white] text-[0.75rem]
+  }
+  
+  .footer-col div{
+    @apply flex flex-row gap-[1.19rem] items-center 
+  }
+  
+  .footer-contacts h1{
+    @apply text-[white] text-[0.875rem] font-semibold leading-[172.4%]
+  }
+  
+  .footer-contacts div{
+    @apply flex flex-row gap-[1rem] 
+  }
+  
+  .footer-contacts div p{
+    @apply text-[#e5dfdf] text-[0.75rem] 
+  }
+  
+  .footer-contacts div h2{
+    @apply   text-[#e5dfdf] text-[0.75rem] w-[5.6rem]
+  }
+  
+  .footer-contacts{
+    @apply gap-[1rem] flex flex-col pb-[3.75rem] relative
+  }
+  
+  .reserved{
+    @apply text-white text-[0.75rem] w-[100%] flex justify-center items-center relative
+  }
+  
+  .star {
+    width: 0.625rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  .star2 {
+    width: 0.375rem;
+    height: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .footer-star1{
+    @apply absolute left-[1rem] top-[7.5rem] desktop:hidden
+  }
+  
+  .trans-star{
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    @apply absolute top-[4.5rem] left-[8rem]
+  }
+  
+  .small-star{
+    @apply absolute top-[4rem] left-[90%]
+  }
+  
+  .pupStar{
+    @apply absolute top-[-1.5rem] left-[5rem]
+  }
