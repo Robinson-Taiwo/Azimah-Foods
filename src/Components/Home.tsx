@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, } from 'react';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
