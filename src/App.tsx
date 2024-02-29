@@ -1,5 +1,5 @@
 
-import {  } from 'react';
+import { } from 'react';
 import './App.css'
 // import Home from './Components/Home'
 // import Preloader from './Components/Preloader'
@@ -12,7 +12,7 @@ function App() {
     <div className="food" >
       {/* {loading ? <Preloader /> : <Home />} */}
       {/* <Home/> */}
-      <AppRoutes/>
+      <AppRoutes />
 
     </div>
   )
