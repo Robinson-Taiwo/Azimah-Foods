@@ -16,7 +16,7 @@
 }
 
 .navbar-item-contact{
-    @apply desktop:bg-[#2893EA] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[white] phone:text-[black] phone:items-center phone:justify-center flex
+    @apply desktop:bg-[#2893EA] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[] phone:text-[black] phone:items-center phone:justify-center flex phone:bg-[white]
 }
 
 .navbar-section-logo{
@@ -28,7 +28,7 @@
 }
 
 .menu-bar{
-    @apply h-[100%] w-[100%] fixed z-[1000]
+    @apply h-[100%] w-[100%] 
 }
 
 .navbar-item{
@@ -43,6 +43,13 @@
     @apply h-[1rem] w-[1rem] desktop:hidden
 }
 
+
+
+
+
+/* .h-carousel-item{
+    @apply h-[] w-[]
+} */
 
 
 .active {
@@ -66,9 +73,13 @@
 
 
 .hidden-bug{
-    @apply flex desktop:hidden
+    @apply flex desktop:hidden px-[3rem]
 }
 
 .but-c{
     @apply w-[100%] flex items-center justify-center  mt-[3rem] desktop:mt-[0rem]
+}
+
+.close-bar{
+    @apply h-[1.5rem] w-[1.5rem]
 }

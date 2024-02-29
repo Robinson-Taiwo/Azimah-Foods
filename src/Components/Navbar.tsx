@@ -3,6 +3,7 @@ import { useState, FC, useEffect } from "react";
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 import menu from "../assets/icons/menu.svg"
+import close from "../assets/icons/close.svg"
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -16,6 +17,8 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
     const handleItemClick: (sectionId: string) => void = (sectionId) => {
         handleScrollToSection(sectionId);
         setActiveItem(sectionId);
+
+        setClicked(false)
     };
 
 
@@ -67,8 +70,7 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
                         <div onClick={() => setClicked(!clicked)}
 
                             className="hidden-bug">
-
-                            cancle
+                            <img onClick={handleClicked} src={close} alt="" className="close-bar" />
                         </div>
 
 
@@ -98,8 +100,8 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
                             {activeItem === 'section2' && <div className="active-line"></div>}
                         </div>
                         <div
-                            onClick={() => handleItemClick('products')}
-                            className={`navbar-item ${activeItem === 'products' ? 'active' : ''}`}
+                            onClick={() => handleItemClick('section3')}
+                            className={`navbar-item ${activeItem === 'section3' ? 'active' : ''}`}
                         >
                             Products
                             {activeItem === 'products' && <div className="active-line"></div>}

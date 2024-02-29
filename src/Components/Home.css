@@ -54,7 +54,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
   .button-cont{
-    @apply w-[100%] items-center flex justify-center 
+    @apply w-[100%] items-center flex justify-center  h-[4rem]
   }
 
 
@@ -157,15 +157,15 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
   .about-section{
-    @apply flex flex-col desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center 
+    @apply flex flex-col-reverse desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center 
   }
 
   .asc-heading{
-    @apply text-[2.4em] font-bold  w-fit
+    @apply text-[2.4em] font-bold  w-fit mt-[2rem] desktop:mt-[0rem] text-[#2893ea]
   }
 
   .asc-subheading{
-    @apply text-[0.9rem] desktop:text-[1.3rem] font-medium w-fit phone:underline 
+    @apply text-[0.9rem] desktop:text-[1.3rem] font-medium w-fit phone:underline text-[#4f5053];
   }
 
   .about-section-content{
@@ -216,13 +216,12 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 .asc-cta:hover {
   box-shadow: inset 400px 0 0 0 #2893EA;
   @apply text-white
-}
+}rem
 
 .asc-ctas {
-  color: #fff;
+  /* color: #fff;
   border: 3px solid #fff;
-  border-radius: 0px;
-  /* padding: 18px 36px; */
+
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
@@ -232,7 +231,10 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s; 
   transition: ease-out 0.4s;
-  @apply phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%] animate-bounce mt-[4rem] bg-[#6db5ef] border-[2px]
+  @apply phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%]  mt-[4rem] bg-[red] border-[2px] animate-bounce; */
+
+
+
 }
 
 .asc-ctas:hover {
@@ -247,8 +249,19 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .gs-heading{
-  @apply wide:text-[3rem] text-[1.9rem] desktop:text-[2.5rem] font-bold text-[#2893EA] mb-[1.5rem]
+  @apply wide:text-[3rem] text-[1.9rem] desktop:text-[2.5rem] font-bold text-[#2893EA] mb-[0.5rem]
 }
+
+.galllery-subheading{
+  @apply text-center phone:w-[90%] desktop:w-[50%] text-[0.8rem] text-[#5b5a5a] mb-[2rem]
+}
+
+
+
+.carousel{
+  @apply desktop:w-[50vw] desktop:h-[50%]  w-[90vw] h-[80%]
+}
+
 
 
 .featured-products{
@@ -274,7 +287,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .product-text{
-  @apply absolute right-[2rem] bottom-[2rem] text-[1rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col text-[#2893Ea] font-medium
+  @apply absolute right-[2rem] bottom-[2rem] text-[1rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col text-[white] font-medium
 }
 
 .product-text h1{

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
@@ -37,6 +37,13 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 // import ScrollTo from "gsap/ScrollToPlugin"
+
+
+
+
+import { Carousel } from 'antd';
+
+
 
 
 
@@ -98,7 +105,7 @@ const Home: React.FC<HomeProps> = () => {
 
                             <div className="button-cont">
 
-                                <button onClick={() => handleScrollToSection("section1")} className="asc-ctas text-white">
+                                <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
                                     <img src={down} className='down-icon' alt="" />
                                 </button>
 
@@ -215,7 +222,7 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="about-section-content">
 
                     <div className="asc-heading">
-                        About Us
+                        ABOUT US
                     </div>
 
                     <div className="asc-subheading">
@@ -248,10 +255,70 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="gs-heading">Gallery/Facilities</div>
 
+                <h2 className="galllery-subheading">
+                    Explore Our Modern Facilities and Diverse Gallery – Where Freshness Meets Innovation. Witness the Journey of Quality Frozen Foods Through a Visual Feast of Our State-of-the-Art Facilities.
+                </h2>
+
+                <>
+                    <Carousel className='carousel' autoplay>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image1} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image2} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image3} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image4} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image5} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image6} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image7} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image8} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image9} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image10} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image11} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image12} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-carousel-item max-w-full rounded-lg" src={image13} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src={image14} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src={image15} alt="" />
+                        </div>
+
+                    </Carousel>
+                </>
 
 
 
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+
+
+
+
+
+                {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div>
                         <img className="h-auto max-w-full rounded-lg" src={image1} alt="" />
                     </div>
@@ -297,14 +364,14 @@ const Home: React.FC<HomeProps> = () => {
                     <div>
                         <img className="h-auto max-w-full rounded-lg" src={image15} alt="" />
                     </div>
-                </div>
+                </div> */}
 
 
 
 
             </div>
 
-            <section className="featured-products">
+            <section id='section3' className="featured-products">
 
                 <h1 className="fp-heading">
                     Our Featured Products
@@ -319,7 +386,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                             <p className="product-text">
-                                chicken
+                                Hake fish
                             </p>
                         </div>
 
@@ -358,7 +425,7 @@ const Home: React.FC<HomeProps> = () => {
                         <div className="pc-overlay4">
 
                             <p className="product-text">
-                                chicken
+                                Mackrel fish
                             </p>
                         </div>
 
@@ -442,7 +509,7 @@ const Home: React.FC<HomeProps> = () => {
 
             </section>
 
-<Footer/>
+            <Footer />
 
         </div>
     )
