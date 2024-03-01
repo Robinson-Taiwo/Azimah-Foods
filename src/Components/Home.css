@@ -40,17 +40,17 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
   .hero-section-content{
-    @apply h-[100%] desktop:w-[100%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem] phone:w-[100%] tablet:w-[70%] desktop:items-center  phone:items-start
+    @apply h-[100%] desktop:w-[100%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem] phone:w-[100%] tablet:w-[100%] desktop:items-center  phone:items-start tablet:items-center 
   }
 
   .hero-content-heading{
-    @apply desktop:text-[2.5rem] wide:text-[4rem] w-[100%] font-extrabold  text-[#289EA]  phone:text-[1.7rem] desktop:w-[80vw] wide:w-[60vw] desktop:text-center 
+    @apply desktop:text-[2.5rem] wide:text-[4rem] w-[100%] font-extrabold  text-[#289EA]  phone:text-[1.7rem] desktop:w-[80vw] wide:w-[60vw] desktop:text-center tablet:text-center tablet:w-[60vw]
   /* text-[white] */
   }
 
 
   .hero-content-subheading{
- @apply w-[90%] phone:text-[0.85rem] desktop:text-[1.5rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw] text-[#373232]
+ @apply w-[90%] phone:text-[0.85rem] desktop:text-[1.5rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw] text-[#373232] tablet:text-center
   }
 
   .button-cont{
@@ -139,17 +139,17 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
 .wm-imageb{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-45 desktop:top-[4rem] phone:h-[5rem] phone:w-[5rem]  top-[0rem] phone:hidden desktop:flex 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-45 desktop:top-[4rem] phone:h-[5rem] phone:w-[5rem]  top-[1rem] phone:hidden desktop:flex 
 }
 
 
 .wm-imagec{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 left-[9rem] rotate-12 bottom-[6rem] phone:h-[5rem] phone:w-[5rem] 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-12 desktop:bottom-[6rem] phone:h-[5rem] phone:w-[5rem] bottom-[1rem]
 }
 
 
 .wm-imaged{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 right-[9rem] rotate-12 bottom-[6rem] phone:h-[5rem] phone:w-[5rem] 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[9rem] rotate-12 desktop:bottom-[6rem] phone:h-[5rem] phone:w-[5rem] right-[1rem]
 }
 
 .down-icon{
@@ -157,12 +157,12 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .wm-imagee{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[55rem] rotate-45 desktop:top-[12rem] phone:h-[5rem] phone:w-[5rem] 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[55rem] rotate-45 desktop:top-[12rem] phone:h-[5rem] phone:w-[5rem] top-[1rem]
 }
 
 
 .wm-imagef{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[15rem] rotate-12 desktop:bottom-[25rem] phone:h-[5rem] phone:w-[5rem] right-[2rem] bottom-[2rem]
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[15rem] rotate-12 desktop:bottom-[30rem] phone:h-[5rem] phone:w-[5rem] right-[2rem] bottom-[2rem]
 }
 
 
@@ -187,7 +187,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
   .about-section{
 
-    @apply flex flex-col desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center bg-[#e0effb]  
+    @apply flex flex-col desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center bg-[#e0effb]  tablet:items-center
   }
 
   /* .curly{
@@ -216,7 +216,20 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
     height: 40px; /* Adjust the height as needed */
     background-color: #fff; /* Set the same background color as your page */
     overflow: hidden;
+    @apply desktop:h-[100px]
   }
+
+
+
+
+  .wavel-container {
+    position: relative;
+    height: 40px; /* Adjust the height as needed */
+    background-color: #fff; /* Set the same background color as your page */
+    overflow: hidden;
+    @apply desktop:h-[100px]
+  }
+
 
   .wave {
     position: absolute;
@@ -244,18 +257,18 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
   .about-section-content{
-    @apply desktop:w-[40%] flex flex-col desktop:gap-[0.5rem] desktop:justify-center wide:gap-[1rem] wide:pl-[1rem] phone:gap-[1rem] phone:mb-[4rem] desktop:mb-[0rem] phone:justify-center phone:items-center desktop:items-start
+    @apply desktop:w-[40%] flex flex-col desktop:gap-[0.5rem] desktop:justify-center wide:gap-[1rem] wide:pl-[1rem] phone:gap-[1rem] phone:mb-[4rem] desktop:mb-[0rem] phone:justify-center phone:items-center desktop:items-start  tablet:items-center 
  
 
   }
 
 .asc-text{
-  @apply text-[0.9rem] desktop:text-left desktop:w-[90%] leading-6  wide:w-[80%] phone:text-center 
+  @apply text-[0.9rem] desktop:text-left desktop:w-[90%] leading-6  wide:w-[80%] phone:text-center tablet:w-[80%]
 }
 
 
   .about-section-image{
-    @apply desktop:w-[40%] w-[100%]
+    @apply desktop:w-[40%] w-[100%] tablet:w-[80%] 
   }
 
   /* .asc-cta{
@@ -320,15 +333,15 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
 .gallery-section{
-  @apply h-fit px-[1rem] desktop:px-[2rem] wide:px-[14rem] flex flex-col items-center justify-center  desktop:mt-[7rem] mb-[4rem]
+  @apply h-fit px-[1rem] desktop:px-[2rem] wide:px-[14rem] flex flex-col items-center justify-center  desktop:mt-[7rem] mb-[4rem] 
 }
 
 .gs-heading{
-  @apply wide:text-[3rem] text-[1.9rem] desktop:text-[2.5rem] font-bold text-[#2893EA] mb-[0.5rem]
+  @apply wide:text-[4rem] text-[1.9rem] desktop:text-[2.5rem] font-bold text-[#2893EA] mb-[0.5rem] tablet:text-[3rem]
 }
 
 .galllery-subheading{
-  @apply text-center phone:w-[90%] desktop:w-[50%] text-[0.8rem] text-[#5b5a5a] mb-[2rem]
+  @apply text-center phone:w-[90%] desktop:w-[50%] text-[0.8rem] text-[#5b5a5a] mb-[2rem] wide:text-[1rem] tablet:w-[70%] 
 }
 
 
@@ -344,17 +357,21 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .fp-heading{
-  @apply w-[100%] flex items-center justify-center text-[1.5rem] desktop:text-[2.5rem] wide:text-[2rem] font-bold text-[#2893Ea]
+  @apply w-[100%] flex items-center justify-center text-[2rem]  wide:text-[4rem] font-bold text-[#2893Ea] desktop:text-[3rem] text-center
 }
 
 
+.fp-subheading{
+  @apply text-[0.8rem] text-center mt-[1rem] text-[#2f2e2e] tablet:w-[60%]
+}
+
 .fp-container{
-  @apply grid grid-cols-1 desktop:grid-cols-3  gap-[2rem] mt-[3rem]
+  @apply desktop:flex desktop:flex-row   desktop:gap-[2rem] mt-[3rem] desktop:flex-wrap items-center justify-center grid grid-cols-2 gap-[1rem] h-fit tablet:grid tablet:grid-cols-3 tablet:gap-[4rem]
 } 
 
 .product-container{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  @apply flex flex-col relative desktop:w-[15.75rem] desktop:h-[16.875rem] wide:w-[18rem] wide:h-[20rem] rounded-md hover:scale-105 hover:transition-all
+  @apply desktop:flex flex-col relative desktop:w-[15.75rem] desktop:h-[16.875rem] wide:w-[18rem] wide:h-[20rem] rounded-md hover:scale-105 hover:transition-all h-[8rem] w-[8rem]  mb-[2rem] tablet:w-[10rem] tablet:h-[10rem]
 }
 
 .product-image{
@@ -362,7 +379,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .product-text{
-  @apply absolute right-[2rem] bottom-[2rem] text-[1rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col text-[white] font-medium
+  @apply right-[2rem] bottom-[2rem] text-[0.8rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col font-normal text-white mt-[0.2rem] bg-[#2893Ea]
 }
 
 .product-text h1{
@@ -388,12 +405,12 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .contact-subheading{
-  @apply text-[0.8rem] text-center text-[#d4d1d1] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%]
+  @apply text-[0.8rem] text-center text-[#d4d1d1] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%] wide:w-[40%] mb-[1rem]
 }
 
 
 .contact-body{
-  @apply desktop:flex desktop:flex-row w-[100%] desktop:justify-evenly h-[100%] pt-[1] flex-wrap flex-col 
+  @apply desktop:flex desktop:flex-row w-[100%] desktop:justify-evenly h-[100%] pt-[1] flex-wrap flex-col tablet:flex-row tablet:flex tablet:items-center tablet:justify-center
 }
 
 
@@ -418,7 +435,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .cb-content{
-  @apply text-white text-[0.7rem]
+  @apply text-white text-[0.7rem] wide:text-[1rem]
 }
 
 .cb-text-cont{

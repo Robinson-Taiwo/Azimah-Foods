@@ -2,14 +2,13 @@ import React, { useEffect, useRef, } from 'react';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
-// import wave from '../assets/icons/wave.svg';
 import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 import fs from '../assets/images/fs.png';
-// import rf from '../assets/images/rf.jpg';
-// import rfm from '../assets/images/rfm.jpg';
-import rcm from '../assets/images/rcm.jpg';
+import hd from '../assets/images/hd.png';
+import cw from '../assets/images/cw.png';
+import fis from '../assets/images/fis.png';
 import phone from "../assets/icons/phone.svg"
 import locate from "../assets/icons/locate.svg"
 import mail from "../assets/icons/mail.svg"
@@ -32,7 +31,6 @@ import image13 from '../assets/images/image13.jpeg';
 import image14 from '../assets/images/image14.jpeg';
 import image15 from '../assets/images/image15.jpeg';
 import hotdog from '../assets/images/hotdog.jpeg';
-import cwings from '../assets/images/cwings.jpg';
 import herringfish from '../assets/images/herringfish.jpeg';
 import hakefish from '../assets/images/hakefish.jpeg';
 import mackrel from '../assets/images/mackrel.jpeg';
@@ -88,7 +86,6 @@ const Home: React.FC<HomeProps> = () => {
                 <Navbar handleScrollToSection={handleScrollToSection} />
             </div>
 
-            {/* bgImage="/ffba.png" */}
 
             <div className="Hero-section" >
 
@@ -101,20 +98,20 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                            <img src={tfm} alt="" className="wm-imagea" />
+                            <img src={fis} alt="" className="wm-imagea" />
 
 
 
 
                             <img src={tfm} alt="image 1" className="wm-imageb" />
 
-                            <img src={rcm} alt="image 2" className="wm-imagec" />
+                            <img src={cw} alt="image 2" className="wm-imagec" />
 
                             <img src={tfm} alt="watermark-image3" className="wm-imaged" />
 
-                            <img src={tfm} alt="" className="wm-imagee" />
+                            <img src={hd} alt="" className="wm-imagee" />
 
-                            <img src={tfm} alt="" className="wm-imagef" />
+                            <img src={hd} alt="" className="wm-imagef" />
 
 
 
@@ -139,18 +136,14 @@ const Home: React.FC<HomeProps> = () => {
 
                         </div>
 
-                        <div className="hero-section-image-container">
-
-                           
-                        </div>
-
+                     
 
                     </div>
-                    <div className="wave-container">
-                <svg className="wavel" viewBox="0 0 1440 200">
-                    <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-                </svg>
-            </div>
+                    <div className="wavel-container">
+                        <svg className="wavel" viewBox="0 0 1440 200">
+                            <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+                        </svg>
+                    </div>
 
 
 
@@ -166,7 +159,6 @@ const Home: React.FC<HomeProps> = () => {
 
             <section id="section1" ref={section1Ref} className="categories-section">
 
-                <img src={tfm} alt="" className="wm-image" />
 
 
                 <img src={appetite} alt="" className="wm-image2" />
@@ -346,140 +338,10 @@ const Home: React.FC<HomeProps> = () => {
 
             </div>
 
-            <section id='section3' className="featured-products">
 
-                <h1 className="fp-heading">
-                    Our Featured Products
-                </h1>
 
-                <div className="fp-container">
 
-                    <div className="product-container">
-
-                        <img src={hakefish} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <p className="product-text">
-                                Hake fish
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-
-
-                    <div className="product-container">
-
-                        <img src={herringfish} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <div className="product-text">
-                                Herring Fish
-                                <p>(panla)</p>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-
-                    <div className="product-container">
-
-                        <img src={mackrel} alt="" className="product-image" />
-
-                        <div className="pc-overlay4">
-
-                            <p className="product-text">
-                                Mackrel fish
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-                    <div className="product-container">
-
-                        <img src={mackrel} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <p className="product-text">
-                                chicken
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-
-
-                    <div className="product-container">
-
-                        <img src={hotdog} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <p className="product-text">
-                                chicken
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div className="product-container">
-
-                        <img src={cwings} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <p className="product-text">
-                                chicken
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-                    <div className="product-container">
-
-                        <img src={tfm} alt="" className="product-image" />
-                        <div className="pc-overlay4">
-
-
-                            <p className="product-text">
-                                chicken
-                            </p>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-            </section>
-
-
-
-            <section className="contacts-section">
+            <section id="section4" className="contacts-section">
 
                 <h1 className="get-in-touch">
                     Get In Touch
@@ -585,6 +447,128 @@ const Home: React.FC<HomeProps> = () => {
 
 
             </section>
+
+
+            <section id='section3' className="featured-products">
+
+                <h1 className="fp-heading">
+                    Our Featured Products
+                </h1>
+
+
+                <h2 className="fp-subheading">
+                    Explore Our Premium Selection of Frozen Food Products. Elevate Your Culinary Experience with Unparalleled Quality and Flavor."
+
+
+
+
+
+                </h2>
+
+                <div className="fp-container">
+
+                    <div className="product-container">
+
+                        <div className="pc-header">
+
+                            <img src={hakefish} alt="" className="product-image" />
+                        </div>
+
+
+
+
+                        <p className="product-text">
+                            Hake fish
+                        </p>
+
+                    </div>
+
+
+
+
+                    <div className="product-container">
+
+                        <img src={herringfish} alt="" className="product-image" />
+
+
+                        <div className="product-text">
+                            Herring Fish
+                            <p>(panla)</p>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                    <div className="product-container">
+
+                        <img src={mackrel} alt="" className="product-image" />
+
+
+                        <p className="product-text">
+                            Mackrel fish
+                        </p>
+
+
+                    </div>
+
+
+                    <div className="product-container">
+
+                        <img src={mackrel} alt="" className="product-image" />
+
+                        <p className="product-text">
+                            chicken
+                        </p>
+
+
+                    </div>
+
+
+
+
+                    <div className="product-container">
+
+                        <img src={hotdog} alt="" className="product-image" />
+
+                        <p className="product-text">
+                            Hotdog
+                        </p>
+
+
+                    </div>
+
+
+
+
+
+                    <div className="product-container">
+
+                        <img src={tfm} alt="" className="product-image h-[89%] " />
+
+                        <p className="product-text">
+                            Hotdog
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+
+
+
 
             <Footer />
 

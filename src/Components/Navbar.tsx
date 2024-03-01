@@ -114,7 +114,7 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
                     <div className="but-c">
 
                         <div
-                            onClick={() => handleItemClick('contact')}
+                            onClick={() => handleItemClick('section4')}
                             className={`navbar-item-contact ${activeItem === 'contact' ? 'active' : ''}`}
                         >
                             Contact us
