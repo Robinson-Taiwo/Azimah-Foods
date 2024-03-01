@@ -43,6 +43,7 @@ const About: React.FC = () => {
 
             <div className="about-page">
 
+                under construction
 
             </div>
 

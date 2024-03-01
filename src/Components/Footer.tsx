@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
 
                         <h2>2nd Gate exist mandate market ilorin(ilorin Branch)</h2>
 
-                        <h2>Owode market opposit femtech it(Offa Branch)</h2>
+                        <h2>Owode market opposit femtech IT(Offa Branch)</h2>
                     </div>
 
                 </div>

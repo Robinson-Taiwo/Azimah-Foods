@@ -136,7 +136,7 @@ const Home: React.FC<HomeProps> = () => {
 
                         </div>
 
-                     
+
 
                     </div>
                     <div className="wavel-container">
@@ -188,7 +188,7 @@ const Home: React.FC<HomeProps> = () => {
                             Chicken
                         </h2>
 
-                        <p>Our chicken is always a delight</p>
+                        <p className='cate' >Our chicken is always a delight</p>
                     </li>
 
                     <li className="ff-category">
@@ -199,7 +199,7 @@ const Home: React.FC<HomeProps> = () => {
                             Meat
                         </h2>
 
-                        <p>fresh meat at your reach</p>
+                        <p className='cate' >fresh meat at your reach</p>
                     </li>
 
                     <li className="ff-category">
@@ -210,7 +210,7 @@ const Home: React.FC<HomeProps> = () => {
                             Fish
                         </h2>
 
-                        <p>Feast on any kind of  fresh fish you need</p>
+                        <p className='cate' >Feast on any kind of  fresh fish you need</p>
 
                     </li>
 
@@ -222,7 +222,7 @@ const Home: React.FC<HomeProps> = () => {
                             Turkey
                         </h2>
 
-                        <p>Owe sell frozen turkey too</p>
+                        <p className='cate' >we sell frozen turkey too</p>
                     </li>
 
 
@@ -492,8 +492,8 @@ const Home: React.FC<HomeProps> = () => {
 
 
                         <div className="product-text">
-                            Herring Fish
-                            <p>(panla)</p>
+
+                            <p> Herring Fish (panla)</p>
 
 
 
@@ -522,10 +522,10 @@ const Home: React.FC<HomeProps> = () => {
 
                     <div className="product-container">
 
-                        <img src={mackrel} alt="" className="product-image" />
+                        <img src={cw} alt="" className="product-image" />
 
                         <p className="product-text">
-                            chicken
+                            Chicken Wings
                         </p>
 
 

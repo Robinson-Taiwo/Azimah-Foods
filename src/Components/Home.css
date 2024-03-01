@@ -176,11 +176,17 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
   .ff-category{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[2rem] desktop:px-[3rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#6ab0e9] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-110 transition-all phone:px-[2rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[1.5rem] sphone:gap-[0.1rem] text-center 
+    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[2rem] desktop:px-[3rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#6ab0e9] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-110 transition-all phone:px-[0.3rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[0.5rem] sphone:gap-[0.1rem] text-center 
   }
  
-  .ff-category p{
-    @apply text-[0.8rem] wide:text-[1.02rem] text-black font-[black] text-center sphone:w-[100%] sphone:text-[0.6rem] phone:w-[9rem]; 
+  /* .ff-category p{
+    @apply text-[0.8rem] sphone:w-[90%] wide:text-[1.02rem] text-black font-[black] text-center sphone:text-[0.6rem] phone:w-[9rem]; 
+  } */
+
+
+  .cate{
+
+    @apply sphone:text-[0.7rem] phone:text-[0.7rem] text-black font-normal desktop:text-[1rem]
   }
 
 
@@ -214,7 +220,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   .wave-container {
     position: relative;
     height: 40px; /* Adjust the height as needed */
-    background-color: #fff; /* Set the same background color as your page */
+    background-color: #fff; /*get-in Set the same background color as your page */
     overflow: hidden;
     @apply desktop:h-[100px]
   }
@@ -401,11 +407,11 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
 .get-in-touch{
-  @apply text-[2.5rem] font-bold text-white desktop:text-[3.5rem]
+  @apply text-[2.5rem] mt-[1rem] font-bold text-white desktop:text-[3.5rem]
 }
 
 .contact-subheading{
-  @apply text-[0.8rem] text-center text-[#d4d1d1] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%] wide:w-[40%] mb-[1rem]
+  @apply text-[0.8rem] text-center text-[#f5efef] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%] wide:w-[40%] mb-[1rem]
 }
 
 
