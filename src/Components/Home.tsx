@@ -2,13 +2,13 @@ import React, { useEffect, useRef, } from 'react';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
-import wave from '../assets/icons/wave.svg';
+// import wave from '../assets/icons/wave.svg';
 import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 import fs from '../assets/images/fs.png';
-import rf from '../assets/images/rf.jpg';
-import rfm from '../assets/images/rfm.jpg';
+// import rf from '../assets/images/rf.jpg';
+// import rfm from '../assets/images/rfm.jpg';
 import rcm from '../assets/images/rcm.jpg';
 import phone from "../assets/icons/phone.svg"
 import locate from "../assets/icons/locate.svg"
