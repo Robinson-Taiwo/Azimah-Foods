@@ -67,7 +67,7 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
 
 
                     <div className="links-small">
-                        <div onClick={() => setClicked(!clicked)}
+                        <div 
 
                             className="hidden-bug">
                             <img onClick={handleClicked} src={close} alt="" className="close-bar" />

@@ -64,16 +64,16 @@ const Footer: React.FC = () => {
                     <div>
                         <img src={call} alt="" />
 
-                        <p>+234  6707653444</p>
+                        <p>+234 6707653444</p>
                     </div>
 
 
                     <div>
                         <img src={location} alt="" />
 
-                        <h2> 27,Alara Street
-                            Yaba 100012
-                            Lagos State</h2>
+                        <h2>2nd Gate exist mandate market ilorin(ilorin Branch)</h2>
+
+                        <h2>Owode market opposit femtech it(Offa Branch)</h2>
                     </div>
 
                 </div>

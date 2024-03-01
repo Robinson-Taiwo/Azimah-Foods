@@ -32,7 +32,7 @@
 }
 
 .navbar-item{
-    @apply text-[0.9rem]  text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem] desktop:w-[100%] 
+    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem] desktop:w-[100%] 
 }
 
 .navbar-section-links{
@@ -68,7 +68,7 @@
 }
 
 .phone-menu{
-    @apply fixed flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] bg-[#2893EA] z-[1000] pt-[3rem] 
+    @apply fixed flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] bg-[#2893EA] z-[1000] pt-[3rem] phone:text-[white] desktop:text-[black]
 }
 
 

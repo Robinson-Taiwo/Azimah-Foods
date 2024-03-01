@@ -123,22 +123,51 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
 .wm-image{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-25 right-[2.5rem] rotate-45 top-[4rem] phone:h-[5rem] phone:w-[5rem] 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 right-[2.5rem] rotate-45 top-[4rem] phone:h-[5rem] phone:w-[5rem] 
 }
 
 .wm-image2{
-  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-25 desktop:left-[3rem] rotate-12 desktop:top-[10rem] phone:h-[5rem] phone:w-[5rem] phone:top-[13rem] phone:left-[2rem] hidden
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[3rem] rotate-12 desktop:top-[10rem] phone:h-[5rem] phone:w-[5rem] phone:top-[13rem] phone:left-[2rem] hidden
 }
 
+
+
+.wm-imagea{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[2.5rem] rotate-45 desktop:top-[4rem] phone:h-[5rem] right-[2rem] phone:w-[5rem] top-[2rem]
+}
+
+
+
+.wm-imageb{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-45 desktop:top-[4rem] phone:h-[5rem] phone:w-[5rem]  top-[0rem] phone:hidden desktop:flex 
+}
+
+
+.wm-imagec{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 left-[9rem] rotate-12 bottom-[6rem] phone:h-[5rem] phone:w-[5rem] 
+}
+
+
+.wm-imaged{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 right-[9rem] rotate-12 bottom-[6rem] phone:h-[5rem] phone:w-[5rem] 
+}
 
 .down-icon{
   @apply h-[1.5rem] w-[1.5rem]
 }
 
+.wm-imagee{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[55rem] rotate-45 desktop:top-[12rem] phone:h-[5rem] phone:w-[5rem] 
+}
+
+
+.wm-imagef{
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:right-[15rem] rotate-12 desktop:bottom-[25rem] phone:h-[5rem] phone:w-[5rem] right-[2rem] bottom-[2rem]
+}
 
 
 .wm-image3{
-  @apply h-[10rem] w-[10rem]  absolute opacity-25 left-[40rem] rotate-12 top-[32rem] wide:top-[42rem] wide:left-[49rem] phone:hidden phone:h-[5rem] phone:w-[5rem]
+  @apply h-[10rem] w-[10rem]  absolute opacity-35 left-[40rem] rotate-12 top-[32rem] wide:top-[42rem] wide:left-[49rem] phone:hidden phone:h-[5rem] phone:w-[5rem]
 }
 
   .cs-subheading{
@@ -157,11 +186,57 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
   .about-section{
-    @apply flex flex-col-reverse desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center 
+
+    @apply flex flex-col desktop:flex-row px-[1rem] desktop:px-[2.5rem] w-[100%]  justify-evenly pb-[4rem] wide:justify-center bg-[#e0effb]  
+  }
+
+  /* .curly{
+    background-image: url(../assets/images/wave.svg);
+  @apply   bg-center bg-cover bg-no-repeat h-[40vh] w-[100vw]
+  } */
+
+  /* .wave{
+    @apply h-[rem] w-[100vw]
+  } */
+
+
+
+
+
+
+  .body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Set your background color */
+  }
+
+  .wave-container {
+    position: relative;
+    height: 40px; /* Adjust the height as needed */
+    background-color: #fff; /* Set the same background color as your page */
+    overflow: hidden;
+  }
+
+  .wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    fill: #e0effb; /* Set the fill color for the wave */
+  }
+
+
+  .wavel {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    fill: #3b8fd4; /* Set the fill color for the wave */
   }
 
   .asc-heading{
-    @apply text-[2.4em] font-bold  w-fit mt-[2rem] desktop:mt-[0rem] text-[#2893ea]
+    @apply desktop:text-[2.4em] font-bold  w-fit mt-[2rem] desktop:mt-[0rem] text-[#2893ea]  text-[2rem]
   }
 
   .asc-subheading{
@@ -180,7 +255,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
   .about-section-image{
-    @apply desktop:w-[40%]
+    @apply desktop:w-[40%] w-[100%]
   }
 
   /* .asc-cta{
@@ -189,7 +264,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   } */
 
   .logistics{
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;    @apply h-[100%] rounded-3xl
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;    @apply h-[100%] rounded-3xl w-[100%]
   }
 
 
@@ -269,7 +344,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .fp-heading{
-  @apply w-[100%] flex items-center justify-center text-[1.5rem] desktop:text-[2rem] wide:text-[2rem] font-bold text-[#2893Ea]
+  @apply w-[100%] flex items-center justify-center text-[1.5rem] desktop:text-[2.5rem] wide:text-[2rem] font-bold text-[#2893Ea]
 }
 
 
@@ -299,4 +374,53 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 .pc-overlay4{
   
   @apply h-[100%] w-[100%] bg-[#3d3b3b] bg-no-repeat bg-center bg-cover flex absolute bg-opacity-30 hover:bg-opacity-55
+}
+
+
+
+.contacts-section{
+  @apply h-fit desktop:pb-[5rem] bg-[#61a8e2] flex items-center flex-col px-[5%] pb-[3rem]
+}
+
+
+.get-in-touch{
+  @apply text-[2.5rem] font-bold text-white desktop:text-[3.5rem]
+}
+
+.contact-subheading{
+  @apply text-[0.8rem] text-center text-[#d4d1d1] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%]
+}
+
+
+.contact-body{
+  @apply desktop:flex desktop:flex-row w-[100%] desktop:justify-evenly h-[100%] pt-[1] flex-wrap flex-col 
+}
+
+
+.cb-icon{
+  @apply desktop:h-[2.1rem] desktop:w-[2.1rem] w-[1.4rem] text-[1.4rem]
+}
+
+.cb-icon-container{
+  @apply h-[3rem] w-[3rem] desktop:h-[4rem] desktop:w-[4rem] flex items-center justify-center rounded-[50%] bg-[#d4d1d1]
+}
+
+.cbc-head{
+  @apply text-white font-bold desktop:text-[1.1rem] flex items-center justify-center mt-[0.5rem]
+}
+
+.cb-content{
+  @apply flex flex-col justify-center items-center
+}
+
+.contact-box{
+  @apply flex flex-col items-center mt-[1rem]
+}
+
+.cb-content{
+  @apply text-white text-[0.7rem]
+}
+
+.cb-text-cont{
+  @apply text-center w-[80%] gap-[1.5rem] flex flex-col
 }

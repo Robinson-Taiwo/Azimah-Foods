@@ -2,11 +2,17 @@ import React, { useEffect, useRef, } from 'react';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
 import meat from '../assets/icons/meat.svg';
+import wave from '../assets/icons/wave.svg';
 import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 import fs from '../assets/images/fs.png';
-// import { galleryData } from './data';
+import rf from '../assets/images/rf.jpg';
+import rfm from '../assets/images/rfm.jpg';
+import rcm from '../assets/images/rcm.jpg';
+import phone from "../assets/icons/phone.svg"
+import locate from "../assets/icons/locate.svg"
+import mail from "../assets/icons/mail.svg"
 import tfm from '../assets/images/tfm.png';
 import appetite from '../assets/images/appetite.png';
 import logistics from '../assets/images/logistics.jpeg';
@@ -31,12 +37,11 @@ import herringfish from '../assets/images/herringfish.jpeg';
 import hakefish from '../assets/images/hakefish.jpeg';
 import mackrel from '../assets/images/mackrel.jpeg';
 import './Home.css';
-// import { Parallax } from 'react-parallax';
+
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-// import ScrollTo from "gsap/ScrollToPlugin"
 
 
 
@@ -94,6 +99,25 @@ const Home: React.FC<HomeProps> = () => {
 
                         <div className="hero-section-content">
 
+
+
+                            <img src={tfm} alt="" className="wm-imagea" />
+
+
+
+
+                            <img src={tfm} alt="image 1" className="wm-imageb" />
+
+                            <img src={rcm} alt="image 2" className="wm-imagec" />
+
+                            <img src={tfm} alt="watermark-image3" className="wm-imaged" />
+
+                            <img src={tfm} alt="" className="wm-imagee" />
+
+                            <img src={tfm} alt="" className="wm-imagef" />
+
+
+
                             <h1 className="hero-content-heading">
                                 Experience Freshness & Variety at Azimah Cold Food Store.
                             </h1>
@@ -117,13 +141,16 @@ const Home: React.FC<HomeProps> = () => {
 
                         <div className="hero-section-image-container">
 
-                            {/* <img src={fs} alt="" className="image1" /> */}
-                            {/* <img src={tfm} alt="" className="image2" /> */}
-                            {/* <img src={appetite} alt="" className="image3" /> */}
+                           
                         </div>
 
 
                     </div>
+                    <div className="wave-container">
+                <svg className="wavel" viewBox="0 0 1440 200">
+                    <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+                </svg>
+            </div>
 
 
 
@@ -218,7 +245,6 @@ const Home: React.FC<HomeProps> = () => {
             <section id='section2' className="about-section">
 
 
-
                 <div className="about-section-content">
 
                     <div className="asc-heading">
@@ -248,6 +274,12 @@ const Home: React.FC<HomeProps> = () => {
 
 
             </section>
+
+            <div className="wave-container">
+                <svg className="wave" viewBox="0 0 1440 200">
+                    <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+                </svg>
+            </div>
 
 
 
@@ -309,63 +341,6 @@ const Home: React.FC<HomeProps> = () => {
 
                     </Carousel>
                 </>
-
-
-
-
-
-
-
-
-
-                {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image1} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image2} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image3} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image4} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image5} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image6} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image7} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image8} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image9} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image10} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image11} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image12} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image13} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image14} alt="" />
-                    </div>
-                    <div>
-                        <img className="h-auto max-w-full rounded-lg" src={image15} alt="" />
-                    </div>
-                </div> */}
-
 
 
 
@@ -505,6 +480,108 @@ const Home: React.FC<HomeProps> = () => {
 
 
             <section className="contacts-section">
+
+                <h1 className="get-in-touch">
+                    Get In Touch
+                </h1>
+
+                <h2 className="contact-subheading">
+                    Contact Us for Inquiries, Orders, and Explore the Frosty World of Our Cold Room Specialties. Your Gateway to Exceptional Frozen Delights Awaits
+                </h2>
+
+
+                <div className="contact-body">
+
+                    <div className="contact-box">
+
+                        <div className="cb-icon-container">
+
+                            <img src={locate} alt="" className="cb-icon" />
+                        </div>
+
+
+                        <div className="cb-content">
+
+                            <div className="cbc-head">
+                                ADDRESS
+                            </div>
+
+                            <div className='cb-text-cont' >
+                                <p className="cb-text">
+                                    2nd Gate exist mandate market ilorin(ilorin Branch)
+                                </p>
+
+                                <p>Owode market opposit femtech it(Offa Branch)</p>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="contact-box">
+
+                        <div className="cb-icon-container">
+
+                            <img src={phone} alt="" className="cb-icon" />
+                        </div>
+
+
+                        <div className="cb-content">
+
+
+                            <div className="cbc-head">
+                                PHONE
+                            </div>
+
+                            <div className='cb-text-cont ' >
+
+                                <p className="cb-text ">
+                                    hop on a call and get to us right away. we are always available to listen
+                                </p>
+
+                                <p className="cb-text ">
+                                    +234 6707653444
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div className="contact-box">
+                        <div className="cb-icon-container">
+
+                            <img src={mail} alt="" className="cb-icon" />
+                        </div>
+
+
+                        <div className="cb-content">
+
+
+                            <div className="cbc-head">
+                                EMAIL
+                            </div>
+
+                            <div className='cb-text-cont' >
+                                <p className="cb-text">
+                                    2nd Gate exist mandate market ilorin(ilorin Branch)
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
 
 
             </section>
