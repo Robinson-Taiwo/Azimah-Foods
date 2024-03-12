@@ -7,7 +7,7 @@
   
 
   .Hero-section{
-    /* background-image: url(../assets/images/snow.jpg); */
+    /* background-image: url(../assets/images/coldroomice.webp); */
     background: linear-gradient(225deg, hsla(0, 0%, 100%, 1) 30%, hsla(207, 82%, 54%, 1) 100%);
     
    @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] ;
@@ -251,7 +251,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
     width: 100%;
     bottom: 0;
     left: 0;
-    fill: #3b8fd4; /* Set the fill color for the wave */
+    fill: #2893ea
+; /* Set the fill color for the wave */
+@apply desktop:hidden
   }
 
   .asc-heading{
@@ -385,7 +387,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .product-text{
-  @apply right-[2rem] bottom-[2rem] text-[0.8rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col font-normal text-white mt-[0.2rem] bg-[#2893Ea]
+  @apply right-[2rem] bottom-[2rem] text-[0.8rem]  desktop:text-[1.2rem] items-center justify-center flex flex-col font-normal text-[#2893Ea] mt-[0.2rem] bg-[white]
 }
 
 .product-text h1{
@@ -429,11 +431,15 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .cbc-head{
-  @apply text-white font-bold desktop:text-[1.1rem] flex items-center justify-center mt-[0.5rem]
+  @apply text-white font-bold desktop:text-[1.1rem] flex items-center justify-center mt-[0.5rem] text-[1.1rem]
 }
 
 .cb-content{
   @apply flex flex-col justify-center items-center
+}
+
+.cb-text-cont p{
+  @apply text-[0.85rem]
 }
 
 .contact-box{
@@ -446,4 +452,8 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 .cb-text-cont{
   @apply text-center w-[80%] gap-[1.5rem] flex flex-col
+}
+
+.cb-text{
+  @apply text-[0.85rem]
 }

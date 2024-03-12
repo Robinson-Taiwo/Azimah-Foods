@@ -8,7 +8,7 @@ import turkey from '../assets/icons/turkey.svg';
 import fs from '../assets/images/fs.png';
 import hd from '../assets/images/hd.png';
 import cw from '../assets/images/cw.png';
-import fis from '../assets/images/fis.png';
+// import fis from '../assets/images/fis.png';
 import phone from "../assets/icons/phone.svg"
 import locate from "../assets/icons/locate.svg"
 import mail from "../assets/icons/mail.svg"
@@ -35,19 +35,26 @@ import herringfish from '../assets/images/herringfish.jpeg';
 import hakefish from '../assets/images/hakefish.jpeg';
 import mackrel from '../assets/images/mackrel.jpeg';
 import './Home.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
-
-
-
 import { Carousel } from 'antd';
 
 
+// Initialize AOS with optional configuration
+AOS.init({
+    duration: 800, // Duration of animations
+    easing: 'ease-in-out', // Easing function for animations
+    once: true, // Only initialize once
+});
 
+// Optional: Add event listener for when AOS is initialized
+AOS.refresh();
 
 
 interface HomeProps { }
@@ -98,20 +105,20 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                            <img src={fis} alt="" className="wm-imagea" />
+                            {/* <img src={fis} alt="" className="wm-imagea" /> */}
 
 
 
 
-                            <img src={tfm} alt="image 1" className="wm-imageb" />
+                            <img src={tfm} alt="image 1" className="wm-imageb " />
 
-                            <img src={cw} alt="image 2" className="wm-imagec" />
+                            <img src={cw} alt="image 2" className="wm-imagec " />
 
-                            <img src={tfm} alt="watermark-image3" className="wm-imaged" />
+                            {/* <img src={tfm} alt="watermark-image3" className="wm-imaged hidden" /> */}
 
-                            <img src={hd} alt="" className="wm-imagee" />
+                            <img src={hd} alt="" className="wm-imagee " />
 
-                            <img src={hd} alt="" className="wm-imagef" />
+                            <img src={hd} alt="" className="wm-imagef " />
 
 
 
@@ -168,7 +175,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                <h1 className="cs-heading">
+                <h1 data-aos="fade-up" className="cs-heading">
                     What We Offer
                 </h1>
 
@@ -180,7 +187,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <ul className="frozen-food-categories">
 
-                    <li className="ff-category">
+                    <li className="ff-category" data-aos="fade-up">
 
                         <img src={chicken} alt="chicken-icon" className="ff-icon" />
 
@@ -191,7 +198,7 @@ const Home: React.FC<HomeProps> = () => {
                         <p className='cate' >Our chicken is always a delight</p>
                     </li>
 
-                    <li className="ff-category">
+                    <li className="ff-category" data-aos="fade-up">
 
                         <img src={meat} alt="chicken-icon" className="ff-icon" />
 
@@ -202,7 +209,7 @@ const Home: React.FC<HomeProps> = () => {
                         <p className='cate' >fresh meat at your reach</p>
                     </li>
 
-                    <li className="ff-category">
+                    <li className="ff-category" data-aos="fade-up">
 
                         <img src={fish} alt="chicken-icon" className="ff-icon" />
 
@@ -214,7 +221,7 @@ const Home: React.FC<HomeProps> = () => {
 
                     </li>
 
-                    <li className="ff-category">
+                    <li className="ff-category" data-aos="fade-up">
 
                         <img src={turkey} alt="chicken-icon" className="ff-icon" />
 
@@ -239,19 +246,19 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="about-section-content">
 
-                    <div className="asc-heading">
+                    <div data-aos="fade-up" className="asc-heading ">
                         ABOUT US
                     </div>
 
-                    <div className="asc-subheading">
+                    <div data-aos="fade-up" className="asc-subheading">
                         our Journey
                     </div>
 
-                    <p className="asc-text">
+                    <p data-aos="fade-up" className="asc-text">
                         Welcome to Azimah Cold Food Store Nigeria Limited, a culinary haven for frozen food enthusiasts. Our journey began in 2014 at the Mandate exit gate in Ilorin, Kwara State, Nigeria. From these roots, we have rapidly grown to become a key player in the vibrant frozen food market.
                     </p>
 
-                    <Link to="/about" className="asc-cta">
+                    <Link data-aos="fade-up" to="/about" className="asc-cta">
                         learn more...
                     </Link>
 
@@ -259,7 +266,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="about-section-image">
 
-                    <img src={logistics} alt="" className="logistics" />
+                    <img data-aos="fade-up" src={logistics} alt="" className="logistics" />
 
                 </div>
 
@@ -277,14 +284,14 @@ const Home: React.FC<HomeProps> = () => {
 
             <div className="gallery-section">
 
-                <div className="gs-heading">Gallery/Facilities</div>
+                <div data-aos="fade-up" className="gs-heading">Gallery/Facilities</div>
 
-                <h2 className="galllery-subheading">
+                <h2 data-aos="fade-up" className="galllery-subheading">
                     Explore Our Modern Facilities and Diverse Gallery – Where Freshness Meets Innovation. Witness the Journey of Quality Frozen Foods Through a Visual Feast of Our State-of-the-Art Facilities.
                 </h2>
 
                 <>
-                    <Carousel className='carousel' autoplay>
+                    <Carousel data-aos="fade-up" className='carousel' autoplay>
                         <div>
                             <img className="h-carousel-item max-w-full rounded-lg" src={image1} alt="" />
                         </div>
@@ -343,26 +350,26 @@ const Home: React.FC<HomeProps> = () => {
 
             <section id="section4" className="contacts-section">
 
-                <h1 className="get-in-touch">
+                <h1 data-aos="fade-up" className="get-in-touch">
                     Get In Touch
                 </h1>
 
-                <h2 className="contact-subheading">
+                <h2 data-aos="fade-up" className="contact-subheading">
                     Contact Us for Inquiries, Orders, and Explore the Frosty World of Our Cold Room Specialties. Your Gateway to Exceptional Frozen Delights Awaits
                 </h2>
 
 
-                <div className="contact-body">
+                <div data-aos="fade-up" className="contact-body">
 
                     <div className="contact-box">
 
-                        <div className="cb-icon-container">
+                        <div data-aos="fade-up" className="cb-icon-container">
 
                             <img src={locate} alt="" className="cb-icon" />
                         </div>
 
 
-                        <div className="cb-content">
+                        <div data-aos="fade-up" className="cb-content">
 
                             <div className="cbc-head">
                                 ADDRESS
@@ -383,7 +390,7 @@ const Home: React.FC<HomeProps> = () => {
 
                     </div>
 
-                    <div className="contact-box">
+                    <div data-aos="fade-up" className="contact-box">
 
                         <div className="cb-icon-container">
 
@@ -416,7 +423,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                     </div>
-                    <div className="contact-box">
+                    <div data-aos="fade-up" className="contact-box">
                         <div className="cb-icon-container">
 
                             <img src={mail} alt="" className="cb-icon" />
@@ -451,7 +458,7 @@ const Home: React.FC<HomeProps> = () => {
 
             <section id='section3' className="featured-products">
 
-                <h1 className="fp-heading">
+                <h1 data-aos="fade-up" className="fp-heading">
                     Our Featured Products
                 </h1>
 
@@ -467,7 +474,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="fp-container">
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
                         <div className="pc-header">
 
@@ -486,7 +493,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
                         <img src={herringfish} alt="" className="product-image" />
 
@@ -507,7 +514,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
                         <img src={mackrel} alt="" className="product-image" />
 
@@ -520,7 +527,7 @@ const Home: React.FC<HomeProps> = () => {
                     </div>
 
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
                         <img src={cw} alt="" className="product-image" />
 
@@ -534,9 +541,9 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
-                        <img src={hotdog} alt="" className="product-image" />
+                        <img src={hotdog} alt="" className="product-image h-[89%] " />
 
                         <p className="product-text">
                             Hotdog
@@ -549,7 +556,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                    <div className="product-container">
+                    <div data-aos="fade-up" className="product-container">
 
                         <img src={tfm} alt="" className="product-image h-[89%] " />
 

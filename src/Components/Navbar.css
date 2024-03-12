@@ -1,5 +1,5 @@
 .navbar-container{
-    @apply flex desktop:py-[1.5rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-white phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
+    @apply flex desktop:py-[1rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-white phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
 }
 
 .navbar-section-items{
@@ -32,7 +32,7 @@
 }
 
 .navbar-item{
-    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem] desktop:w-[100%] 
+    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1rem] desktop:w-[100%]
 }
 
 .navbar-section-links{

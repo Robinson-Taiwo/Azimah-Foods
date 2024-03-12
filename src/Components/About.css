@@ -1,3 +1,116 @@
 .about-page{
-    @apply h-[50vh] w-[100%] text-[2rem] flex items-center justify-center font-bold text-[#2893ea]
+    @apply h-[50vh] w-[100%]  
 }
+
+.about-hero{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+background-image: url(../assets/images/aboutfish.jpg);
+    @apply desktop:h-[50vh] w-[100vw] items-center justify-center flex bg-center bg-cover bg-no-repeat h-[40vh]
+}
+
+.about-hero-overlay{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    @apply   h-[100%] w-[100%] bg-[black] bg-opacity-55 items-center flex justify-center 
+}
+
+.about-hero-heading-container{
+    @apply flex flex-col items-center justify-center   w-fit
+}
+
+.about-hero-big-heading{
+    @apply text-[1.8rem] desktop:text-[2.5rem] text-[white] font-bold wide:text-[3.5rem]
+}
+
+.about-hero-subheading{
+    @apply flex items-center text-[white] w-[90%] text-center desktop:text-[1.2rem] wide:text-[1.5rem] wide:w-[85%] text-[0.9rem] desktop:w-[70%]
+}
+
+
+.about-the-beginning{
+    @apply  flex flex-col desktop:flex-row desktop:h-[40vh] w-[100vw] bg-white items-center desktop:px-[1.5rem] desktop:mt-[4rem] wide:px-[2rem] wide:pr-[4rem] h-fit desktop:justify-around 
+}
+
+.the-beginning-image{
+    background-image: url(../assets/images/image1.jpeg);
+    @apply desktop:w-[30vw] wide:w-[25vw] desktop:h-[100%]  bg-center bg-cover bg-no-repeat rounded-[50%] h-[15rem] w-[90%] mt-[1rem] desktop:mt-[0rem]
+}
+
+
+.the-beginning-text-container{
+    @apply desktop:w-[60vw] w-[85%] text-justify desktop:text-start
+}
+
+.the-beginning-text-container p{
+    @apply w-[100%] desktop:w-[70%] font-normal text-[0.9rem] desktop:pl-[2rem] wide:pl-[4rem] leading-6 wide:w-[70%] wide:text-[1.1rem] wide:leading-8 
+}
+
+
+.the-bimage-overlay{
+    @apply h-[100%] w-[100%] bg-[#2a2ac4] bg-opacity-30  rounded-[50%]
+}
+
+
+.about-the-beginning-two{
+    @apply  flex flex-col desktop:flex-row-reverse h-[40vh] w-[100vw] bg-white items-center desktop:px-[1.5rem] mt-[4rem] justify-evenly mb-[3rem] desktop:mb-[0rem]
+}
+
+/* .the-beginning-image{
+    background-image: url(../assets/images/image1.jpeg);
+    @apply w-[30vw] h-[100%] bg-center bg-cover bg-no-repeat rounded-[50%]
+} */
+
+.the-beginning-image-two{
+    background-image: url(../assets/images/image2.jpeg);
+    @apply desktop:w-[40vw] wide:w-[40vw] desktop:h-[100%] bg-center bg-cover bg-no-repeat  sphone:h-[4rem] w-[100%] phone:hidden desktop:flex 
+ }
+
+.the-beginning-image-three{
+    background-image: url(../assets/images/image3.jpeg);
+    @apply desktop:w-[30vw] wide:w-[25vw] desktop:h-[100%]  bg-center bg-cover bg-no-repeat rounded-[50%] h-[15rem] w-[90%] mt-[1rem] desktop:mt-[0rem]
+}
+
+
+
+
+.the-journey{
+    @apply desktop:w-[70vw] items-end justify-end flex wide:w-[50%] sphone:flex-col w-[85%] mb-[4rem] desktop:mb-[0rem]
+}
+
+.the-journey p{ 
+    @apply desktop:w-[70%] font-normal text-[0.9rem] desktop:pr-[2rem]  leading-6 wide:text-[1.1rem] wide:leading-8 text-justify desktop:text-start
+}
+
+
+.the-bimage-overlay{
+    @apply h-[100%] w-[100%] bg-[#2a2ac4] bg-opacity-30  rounded-[50%]
+}
+
+
+.the-bimage-overlay-two{
+    @apply h-[100%] w-[100%] bg-[#2a2ac4] bg-opacity-30 
+}
+
+.capitalize{
+    @apply desktop:text-[2rem] text-[2rem] font-extrabold text-[#2893Ea] wide:text-[3rem]
+}
+
+.about-last-section{
+    background-image: url(../assets/images/seafood.jpg);
+    @apply flex items-center justify-center  text-center    mt-[2rem] desktop:h-[40vh] bg-center bg-cover bg-no-repeat h-fit 
+}
+
+
+.about-last-section p{
+    @apply desktop:text-[1em] w-[75%]  wide:w-[50%] text-[0.85rem]
+}   
+
+.about-last-overlay{
+    @apply h-[100%] w-[100%] bg-opacity-65  flex items-center justify-center  text-center bg-[black] desktop:px-[4rem] text-white flex-col pb-[2rem] desktop:pb-[0rem]
+}
+
+.our-commitment{
+    @apply desktop:mb-[2rem] font-bold desktop:text-[2.5rem] underline mb-[1rem] mt-[1rem]
+} 
