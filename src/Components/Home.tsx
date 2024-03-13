@@ -6,7 +6,12 @@ import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
 import fs from '../assets/images/fs.png';
-import hd from '../assets/images/hd.png';
+// import hd from '../assets/images/hd.png';
+import raw from '../assets/images/raw-fish.jpg';
+import bvrf from '../assets/images/bvrf.jpg';
+import aboutfish from '../assets/images/aboutfish.jpg';
+
+
 import cw from '../assets/images/cw.png';
 // import fis from '../assets/images/fis.png';
 import phone from "../assets/icons/phone.svg"
@@ -93,71 +98,64 @@ const Home: React.FC<HomeProps> = () => {
                 <Navbar handleScrollToSection={handleScrollToSection} />
             </div>
 
+            <section id='section0' className="afs">
 
-            <div className="Hero-section" >
-
-                <div id='section0' className="hero-section-overlay">
-
-
-                    <div className="hero-container">
-
-                        <div className="hero-section-content">
+                <div className="afs-content">
 
 
+                    <h1>
+                        Experience Freshness & Variety at Azimah Cold Food Store.
+                    </h1>
 
-                            {/* <img src={fis} alt="" className="wm-imagea" /> */}
-
-
-
-
-                            <img src={tfm} alt="image 1" className="wm-imageb " />
-
-                            <img src={cw} alt="image 2" className="wm-imagec " />
-
-                            {/* <img src={tfm} alt="watermark-image3" className="wm-imaged hidden" /> */}
-
-                            <img src={hd} alt="" className="wm-imagee " />
-
-                            <img src={hd} alt="" className="wm-imagef " />
+                    <h2>
+                        Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
+                    </h2>
 
 
+                    <div className="afs-cta">
 
-                            <h1 className="hero-content-heading">
-                                Experience Freshness & Variety at Azimah Cold Food Store.
-                            </h1>
-
-                            <div className="hero-content-subheading">
-                                Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
-                            </div>
-
-
-                            <div className="button-cont">
-
-                                <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem]  desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
-                                    <img src={down} className='down-icon' alt="" />
-                                </button>
-
-                            </div>
-
-
-
-                        </div>
-
-
-
+                        <button>
+                            About
+                        </button>
                     </div>
-                    <div className="wavel-container">
-                        <svg className="wavel" viewBox="0 0 1440 200">
-                            <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-                        </svg>
-                    </div>
-
 
 
                 </div>
 
 
-            </div>
+                <div className="afs-images">
+
+                    <div className="one-box">
+                        <img className="afs-image" src={bvrf} alt="" />
+                    </div>
+                    <div className="two-box">
+                        <img className="afs-image" src={raw} alt="" />
+
+                    </div>
+                    <div className="two-box">
+                        <img className="afs-image" src={aboutfish} alt="" />
+
+                    </div>
+                    <div className="one-box">
+                        <img className="afs-image" src={tfm} alt="" />
+
+                    </div>
+
+
+                </div>
+
+                <div className="button-cont w-[100vw] left-[0rem] bottom-[1rem] absolute ">
+
+                    <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem] bg-black desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
+                        <img src={down} className='down-icon' alt="" />
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
 
             <div className="blur-blue">
 

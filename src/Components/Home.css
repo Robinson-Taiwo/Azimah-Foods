@@ -6,6 +6,55 @@
   }
   
 
+.afs{
+  @apply desktop:h-[85vh] flex desktop:flex-row relative flex-col w-[100vw] bg-[#f6eaea] h-[fit] desktop:pt-[0rem] pt-[3rem] px-[1rem] pb-[5rem] desktop:pb-[0rem]
+}
+
+.afs-content{
+  /* font-family: "Montserrat", sans-serif; */
+
+  @apply  w-[100%]  desktop:max-w-[60%]  flex-col justify-center flex desktop:pl-[1.5rem]
+}
+
+/* bg-[#f6eaea] */
+
+.afs-content h1{
+  @apply desktop:text-[2.1rem] font-bold desktop:w-[90%] w-[100%] text-[1.9rem]
+}
+
+.afs-image{
+  @apply h-[100%] w-[100%] 
+}
+
+.afs-content h2{
+  font-family: "Montserrat", sans-serif; 
+
+  @apply desktop:w-[80%] font-normal desktop:mt-[1rem] mt-[0.5rem] w-[100%] desktop:text-[1rem]  text-[0.9rem] }
+
+.afs-cta{
+  @apply desktop:mt-[1rem] desktop:pl-[1rem] mt-[1rem]   desktop:m-[0rem]
+}
+
+.afs-cta button{
+  outline: 1px solid black ;
+  @apply bg-[white] text-black desktop:px-[2rem] desktop:py-[0.5rem] rounded-sm  text-[0.9rem] desktop:text-[1rem] py-[0.5rem] px-[1.4rem]
+}
+
+.afs-images{
+  @apply desktop:relative  w-[100%] desktop:grid grid-cols-2  desktop:max-w-[40%] place-items-center desktop:m-auto grid  mt-[3rem]
+}
+
+
+.one-box, .two-box{
+  border: 2px solid white ;
+  @apply  desktop:h-[10.5rem] h-[7rem] w-[8rem] desktop:w-[11rem] rounded-md shadow-md
+}
+
+.one-box{
+  @apply desktop:h-[13rem] h-[9rem] w-[8rem] desktop:w-[10rem] 
+}
+
+
   .Hero-section{
     /* background-image: url(../assets/images/coldroomice.webp); */
     background: linear-gradient(225deg, hsla(0, 0%, 100%, 1) 30%, hsla(207, 82%, 54%, 1) 100%);
@@ -312,7 +361,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 .asc-cta:hover {
   box-shadow: inset 400px 0 0 0 #2893EA;
   @apply text-white
-}rem
+}
 
 .asc-ctas {
   /* color: #fff;

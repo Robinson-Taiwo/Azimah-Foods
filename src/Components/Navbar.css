@@ -1,5 +1,5 @@
 .navbar-container{
-    @apply flex desktop:py-[1rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-white phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
+    @apply flex desktop:py-[1rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center   justify-between bg-[#f6eaea] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
 }
 
 .navbar-section-items{
@@ -8,7 +8,7 @@
 
 
 .links-small{
-    @apply flex desktop:flex-row gap-[3rem] text-[0.9rem]  font-medium   desktop:bg-transparent  desktop:items-center  desktop:px-[0rem]  phone:h-[100%] phone:flex-col
+    @apply flex desktop:flex-row gap-[3rem] text-[0.9rem]  font-normal   desktop:bg-transparent  desktop:items-center  desktop:px-[0rem]  phone:h-[100%] phone:flex-col
 }
 
 .isScrolled{
@@ -16,7 +16,7 @@
 }
 
 .navbar-item-contact{
-    @apply desktop:bg-[#2893EA] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[] phone:text-[black] phone:items-center phone:justify-center flex phone:bg-[white]
+    @apply desktop:bg-[black] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[] phone:text-[black] phone:items-center phone:justify-center flex phone:bg-[white] desktop:text-[white] desktop:font-bold desktop:text-[0.9rem]
 }
 
 .navbar-section-logo{
@@ -32,7 +32,7 @@
 }
 
 .navbar-item{
-    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[1rem] desktop:w-[100%]
+    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[0.9rem] desktop:w-[100%]
 }
 
 .navbar-section-links{
@@ -58,7 +58,7 @@
   .active-line {
     height: 2px; 
     width: 3rem;
-    background-color: #00ffee; /* Set the desired color for the line */
+    background-color: black; /* Set the desired color for the line */
     width: 100%;
     @apply phone:hidden desktop:flex
    
