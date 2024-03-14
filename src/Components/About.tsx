@@ -3,10 +3,23 @@ import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 // import { Link } from 'react-router-dom';
 import Navbar from './Navbar'
+import AOS from 'aos';
+
 import Footer from './Footer';
 import "./About.css"
 
+// Initialize AOS with optional configuration
+AOS.init({
+    duration: 800, // Duration of animations
+    easing: 'ease-in-out', // Easing function for animations
+    once: true, // Only initialize once
+});
+
+// Optional: Add event listener for when AOS is initialized
+AOS.refresh();
 const About: React.FC = () => {
+
+
 
 
     useEffect(() => {
@@ -52,11 +65,11 @@ const About: React.FC = () => {
 
                         <div className="about-hero-heading-container">
 
-                            <h1 className="about-hero-big-heading">
+                            <h1 data-aos="fade-up" data-aos-delay="100" className="about-hero-big-heading">
                                 ABOUT AZIMAH LTD.
                             </h1>
 
-                            <h2 className="about-hero-subheading">
+                            <h2 data-aos="fade-up"  data-aos-delay="300" className="about-hero-subheading">
                                 Learn more about what Azimah has to offer and our Journey in full. Be part of the experience
                             </h2>
 
@@ -78,7 +91,7 @@ const About: React.FC = () => {
 
 
 
-                    <p  >
+                    <p  data-aos="zoom-in" data-aos-delay="600" >
                         <span className='capitalize' >A</span>zimah Cold Food Store Nigeria Limited is a vibrant business that began its journey in 2014. Located at the Mandate exit gate in Ilorin, Kwara State, Nigeria, it has swiftly established itself as a prominent player in the frozen food market. With a commitment to excellence, Azimah Cold Food Store has expanded its operations to encompass three branches strategically positioned across Kwara State.
                     </p>
 

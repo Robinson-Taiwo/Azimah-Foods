@@ -148,7 +148,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="button-cont w-[100vw] left-[0rem] bottom-[1rem] absolute ">
 
-                    <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem] bg-black desktop:text-[0.9rem] hover:bg-[#f6eaea] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
+                    <button data-aos="zoom-in" data-aos-delay="900" onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem] bg-black desktop:text-[0.9rem] hover:bg-[#f6eaea] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
                         <img src={down} className='down-icon' alt="" />
                     </button>
 
@@ -239,7 +239,7 @@ const Home: React.FC<HomeProps> = () => {
                         What We Offer
                     </h1>
 
-                    <h4 className="cs-subheading">
+                    <h4 data-aos="zoom-in" data-aos-delay="300" className="cs-subheading">
 
                         Discover Azimah's premium selection of frozen meats. From tender chicken to fresh fish and flavorful sausages, we provide high-quality frozen foods that are convenient and delicious. Sourced from trusted suppliers and rigorously quality-checked, our products ensure top-notch taste every time.
                     </h4>
@@ -381,7 +381,7 @@ const Home: React.FC<HomeProps> = () => {
                                 ADDRESS
                             </div>
 
-                            <div className='cb-text-cont' >
+                            <div data-aos="fade-up" data-aos-delay="300" className='cb-text-cont' >
                                 <p className="cb-text">
                                     2nd Gate exist mandate market ilorin(ilorin Branch)
                                 </p>
@@ -469,7 +469,7 @@ const Home: React.FC<HomeProps> = () => {
                 </h1>
 
 
-                <h2 className="fp-subheading">
+                <h2 data-aos="fade-up" data-aos-delay="300" className="fp-subheading">
                     Explore Our Premium Selection of Frozen Food Products. Elevate Your Culinary Experience with Unparalleled Quality and Flavor."
 
 
@@ -479,7 +479,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="100" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={kote} alt="" className="pc-image" />
@@ -496,7 +496,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="200" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={titus} alt="" className="pc-image" />
@@ -512,7 +512,7 @@ const Home: React.FC<HomeProps> = () => {
                     {/* end of product container */}
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="300" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={hake} alt="" className="pc-image" />
@@ -528,7 +528,7 @@ const Home: React.FC<HomeProps> = () => {
                     {/* end of product container */}
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="400" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={sussage} alt="" className="pc-image" />
@@ -551,7 +551,7 @@ const Home: React.FC<HomeProps> = () => {
                     {/* section two---------------------------------------------------------------- */}
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="500" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={gizzard} alt="" className="pc-image" />
@@ -568,7 +568,7 @@ const Home: React.FC<HomeProps> = () => {
 
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="600" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={fillet} alt="" className="pc-image" />
@@ -584,7 +584,7 @@ const Home: React.FC<HomeProps> = () => {
                     {/* end of product container */}
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="700" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={chickenmeat} alt="" className="pc-image" />
@@ -600,7 +600,7 @@ const Home: React.FC<HomeProps> = () => {
                     {/* end of product container */}
 
                     {/* product container */}
-                    <div className="product-container">
+                    <div data-aos="zoom-in" data-aos-delay="800" className="product-container">
 
                         <div className="pc-image-container">
                             <img src={cw} alt="" className="pc-image" />
