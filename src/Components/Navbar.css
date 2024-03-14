@@ -16,11 +16,13 @@
 }
 
 .navbar-item-contact{
-    @apply desktop:bg-[black] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]  phone:bg-[] phone:text-[black] phone:items-center phone:justify-center flex phone:bg-[white] desktop:text-[white] desktop:font-bold desktop:text-[0.9rem]
+    @apply desktop:bg-[black] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]    phone:items-center phone:justify-center flex phone:bg-[black] desktop:text-[white] desktop:font-bold desktop:text-[0.9rem] phone:text-[white]
 }
 
 .navbar-section-logo{
-    @apply desktop:text-[1.5rem] font-bold phone:text-[1rem] 
+    font-family: "GFS Didot", serif;
+
+    @apply desktop:text-[1.5rem] font-extrabold phone:text-[1rem] 
 }
 
 .ham-menu{
@@ -32,7 +34,7 @@
 }
 
 .navbar-item{
-    @apply text-[1rem] text-[white] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[0.9rem] desktop:w-[100%]
+    @apply text-[1rem] text-[black] desktop:text-black items-center flex justify-center cursor-pointer flex-col  desktop:text-[0.9rem] desktop:w-[100%]
 }
 
 .navbar-section-links{
@@ -68,7 +70,7 @@
 }
 
 .phone-menu{
-    @apply fixed flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] bg-[#2893EA] z-[1000] pt-[3rem] phone:text-[white] desktop:text-[black]
+    @apply fixed flex-col  flex  left-[0] top-[0] h-[100vh] w-[100vw] bg-[#f6eaea] z-[1000] pt-[3rem] phone:text-[black] desktop:text-[black]
 }
 
 

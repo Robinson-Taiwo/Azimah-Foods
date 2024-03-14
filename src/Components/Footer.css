@@ -1,7 +1,7 @@
 
 
 .section-footer{
-    @apply bg-[#00ABE4] pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] desktop:pb-[3.04rem] 
+    @apply  bg-[#f7dada]  pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] desktop:pb-[3.04rem]  z-0
   }
   
   .footer-first-div{
@@ -21,17 +21,17 @@
   }
   
   .footer-text{
-    @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] desktop:w-[27rem] 
+    @apply text-black leading-[172.4%] text-[0.75rem]  mb-[2.44rem] desktop:w-[27rem] 
   }
   
   .patition{
   width: 0.125rem;
   height: 1.0625rem;
-  @apply text-white inline-block bg-[#24577b] mx-[0.5rem]
+  @apply text-black inline-block bg-[#24577b] mx-[0.5rem]
   }
   
   .demacate{
-    @apply text-white pb-[2rem]
+    @apply text-black pb-[2rem]
   }
   
   .footer-col{
@@ -39,15 +39,15 @@
   }
   
   .footer-col h2{
-    @apply text-[white] text-[0.875rem] font-semibold
+    @apply text-[black] text-[0.875rem] font-semibold
   }
   
   .lmao{
-  @apply text-[#e5dfdf] text-[0.75rem] 
+  @apply text-[black] text-[0.75rem] 
   }
   
   .footer-socials{
-    @apply text-[white] text-[0.75rem]
+    @apply text-[black] text-[0.75rem]
   }
   
   .footer-col div{
@@ -55,7 +55,7 @@
   }
   
   .footer-contacts h1{
-    @apply text-[white] text-[0.875rem] font-semibold leading-[172.4%]
+    @apply text-[black] text-[0.875rem] font-semibold leading-[172.4%]
   }
   
   .footer-contacts div{
@@ -63,11 +63,11 @@
   }
   
   .footer-contacts div p{
-    @apply text-[#e5dfdf] text-[0.75rem] 
+    @apply text-[black] text-[0.75rem] 
   }
   
   .footer-contacts div h2{
-    @apply   text-[#e5dfdf] text-[0.75rem] w-[5.6rem]
+    @apply   text-[#5c5959] text-[0.75rem] w-[5.6rem]
   }
   
   .footer-contacts{
@@ -75,7 +75,7 @@
   }
   
   .reserved{
-    @apply text-white text-[0.75rem] w-[100%] flex justify-center items-center relative
+    @apply text-black text-[0.75rem] w-[100%] flex justify-center items-center relative
   }
   
   .star {

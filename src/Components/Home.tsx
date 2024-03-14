@@ -5,21 +5,17 @@ import meat from '../assets/icons/meat.svg';
 import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
-import fs from '../assets/images/fs.png';
+// import fs from '../assets/images/fs.png';
 // import hd from '../assets/images/hd.png';
 import raw from '../assets/images/raw-fish.jpg';
 import bvrf from '../assets/images/bvrf.jpg';
 import aboutfish from '../assets/images/aboutfish.jpg';
 
 
-import cw from '../assets/images/cw.png';
-// import fis from '../assets/images/fis.png';
 import phone from "../assets/icons/phone.svg"
 import locate from "../assets/icons/locate.svg"
 import mail from "../assets/icons/mail.svg"
 import tfm from '../assets/images/tfm.png';
-import appetite from '../assets/images/appetite.png';
-import logistics from '../assets/images/logistics.jpeg';
 import image1 from '../assets/images/image1.jpeg';
 import image2 from '../assets/images/image2.jpeg';
 import image3 from '../assets/images/image3.jpeg';
@@ -35,10 +31,16 @@ import image12 from '../assets/images/image12.jpeg';
 import image13 from '../assets/images/image13.jpeg';
 import image14 from '../assets/images/image14.jpeg';
 import image15 from '../assets/images/image15.jpeg';
-import hotdog from '../assets/images/hotdog.jpeg';
-import herringfish from '../assets/images/herringfish.jpeg';
-import hakefish from '../assets/images/hakefish.jpeg';
-import mackrel from '../assets/images/mackrel.jpeg';
+import titus from '../assets/images/titus.jpg';
+import kote from '../assets/images/kote.jpg';
+// import appetite from '../assets/images/appetite.png';
+import chickenmeat from '../assets/images/chickenmeat.jpg';
+import sussage from '../assets/images/sussage.jpg';
+import hake from '../assets/images/hake.jpg';
+import gizzard from '../assets/images/gizzard.jpg';
+import cw from '../assets/images/cw.png';
+
+import fillet from '../assets/images/fillet.webp';
 import './Home.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -103,18 +105,18 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="afs-content">
 
 
-                    <h1>
+                    <h1 data-aos="fade-right" data-aos-delay="100" >
                         Experience Freshness & Variety at Azimah Cold Food Store.
                     </h1>
 
-                    <h2>
+                    <h2 data-aos="fade-right" data-aos-delay="300" >
                         Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
                     </h2>
 
 
                     <div className="afs-cta">
 
-                        <button>
+                        <button data-aos="fade-right" data-aos-delay="500" >
                             About
                         </button>
                     </div>
@@ -125,18 +127,18 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="afs-images">
 
-                    <div className="one-box">
+                    <div data-aos="zoom-in" data-aos-delay="600" className="one-box">
                         <img className="afs-image" src={bvrf} alt="" />
                     </div>
-                    <div className="two-box">
+                    <div data-aos="zoom-in" data-aos-delay="700" className="two-box">
                         <img className="afs-image" src={raw} alt="" />
 
                     </div>
-                    <div className="two-box">
+                    <div data-aos="zoom-in" data-aos-delay="800" className="two-box">
                         <img className="afs-image" src={aboutfish} alt="" />
 
                     </div>
-                    <div className="one-box">
+                    <div data-aos="zoom-in" data-aos-delay="900" className="one-box">
                         <img className="afs-image" src={tfm} alt="" />
 
                     </div>
@@ -146,7 +148,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="button-cont w-[100vw] left-[0rem] bottom-[1rem] absolute ">
 
-                    <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem] bg-black desktop:text-[0.9rem] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
+                    <button onClick={() => handleScrollToSection("section1")} className="asc-ctas animate-bounce phone:w-fit desktop:px-[0.7rem] desktop:py-[0.7rem]  phone:px-[0.4rem] py-[0.4rem] bg-black desktop:text-[0.9rem] hover:bg-[#f6eaea] wide:text-[1rem] rounded-[50%]  mt-[4rem] border-[2px] ">
                         <img src={down} className='down-icon' alt="" />
                     </button>
 
@@ -166,21 +168,14 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-                <img src={appetite} alt="" className="wm-image2" />
+                {/* <img src={appetite} alt="" className="wm-image2" />
 
-                <img src={fs} alt="" className="wm-image3" />
-
-
+                <img src={fs} alt="" className="wm-image3" /> */}
 
 
-                <h1 data-aos="fade-up" className="cs-heading">
-                    What We Offer
-                </h1>
 
-                <h4 className="cs-subheading">
 
-                    Indulge in a frosty feast with our curated selection of frozen delights. Dive into a world where freshness meets frozen perfection
-                </h4>
+
 
 
                 <ul className="frozen-food-categories">
@@ -201,10 +196,10 @@ const Home: React.FC<HomeProps> = () => {
                         <img src={meat} alt="chicken-icon" className="ff-icon" />
 
                         <h2>
-                            Meat
+                            Sussages
                         </h2>
 
-                        <p className='cate' >fresh meat at your reach</p>
+                        <p className='cate' >fresh sussage at your reach</p>
                     </li>
 
                     <li className="ff-category" data-aos="fade-up">
@@ -232,6 +227,23 @@ const Home: React.FC<HomeProps> = () => {
 
 
                 </ul>
+
+
+
+
+
+                <div className="cs-one">
+
+
+                    <h1 data-aos="fade-up" className="cs-heading">
+                        What We Offer
+                    </h1>
+
+                    <h4 className="cs-subheading">
+
+                        Discover Azimah's premium selection of frozen meats. From tender chicken to fresh fish and flavorful sausages, we provide high-quality frozen foods that are convenient and delicious. Sourced from trusted suppliers and rigorously quality-checked, our products ensure top-notch taste every time.
+                    </h4>
+                </div>
 
 
 
@@ -264,7 +276,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 <div className="about-section-image">
 
-                    <img data-aos="fade-up" src={logistics} alt="" className="logistics" />
+                    {/* <img data-aos="fade-up" src={logistics} alt="" className="logistics" /> */}
 
                 </div>
 
@@ -272,17 +284,13 @@ const Home: React.FC<HomeProps> = () => {
 
             </section>
 
-            <div className="wave-container">
-                <svg className="wave" viewBox="0 0 1440 200">
-                    <path fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,58.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-                </svg>
-            </div>
+
 
 
 
             <div className="gallery-section">
 
-                <div data-aos="fade-up" className="gs-heading">Gallery/Facilities</div>
+                <div data-aos="fade-up" className="gs-heading">Explore Our Spaces</div>
 
                 <h2 data-aos="fade-up" className="galllery-subheading">
                     Explore Our Modern Facilities and Diverse Gallery – Where Freshness Meets Innovation. Witness the Journey of Quality Frozen Foods Through a Visual Feast of Our State-of-the-Art Facilities.
@@ -465,105 +473,148 @@ const Home: React.FC<HomeProps> = () => {
                     Explore Our Premium Selection of Frozen Food Products. Elevate Your Culinary Experience with Unparalleled Quality and Flavor."
 
 
-
-
-
                 </h2>
 
-                <div className="fp-container">
+                <div className="products-container">
 
-                    <div data-aos="fade-up" className="product-container">
 
-                        <div className="pc-header">
+                    {/* product container */}
+                    <div className="product-container">
 
-                            <img src={hakefish} alt="" className="product-image" />
+                        <div className="pc-image-container">
+                            <img src={kote} alt="" className="pc-image" />
+
                         </div>
 
-
-
-
-                        <p className="product-text">
-                            Hake fish
-                        </p>
-
-                    </div>
-
-
-
-
-                    <div data-aos="fade-up" className="product-container">
-
-                        <img src={herringfish} alt="" className="product-image" />
-
-
-                        <div className="product-text">
-
-                            <p> Herring Fish (panla)</p>
-
-
-
+                        <div className="pc-">
+Kote
                         </div>
 
 
                     </div>
+                    {/* end of product container */}
 
 
+                    {/* product container */}
+                    <div className="product-container">
 
+                        <div className="pc-image-container">
+                            <img src={titus} alt="" className="pc-image" />
 
+                        </div>
 
-
-                    <div data-aos="fade-up" className="product-container">
-
-                        <img src={mackrel} alt="" className="product-image" />
-
-
-                        <p className="product-text">
-                            Mackrel fish
-                        </p>
+                        <div className="pc-">
+Titus
+                        </div>
 
 
                     </div>
+                    {/* end of product container */}
+
+                    {/* product container */}
+                    <div className="product-container">
+
+                        <div className="pc-image-container">
+                            <img src={hake} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
+Hake
+                        </div>
 
 
-                    <div data-aos="fade-up" className="product-container">
+                    </div>
+                    {/* end of product container */}
 
-                        <img src={cw} alt="" className="product-image" />
+                    {/* product container */}
+                    <div className="product-container">
 
-                        <p className="product-text">
+                        <div className="pc-image-container">
+                            <img src={sussage} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
+Sussage
+                        </div>
+
+
+                    </div>
+                    {/* end of product container */}
+
+
+
+
+
+
+                    {/* section two---------------------------------------------------------------- */}
+
+                    {/* product container */}
+                    <div className="product-container">
+
+                        <div className="pc-image-container">
+                            <img src={gizzard} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
+                            Gizzard
+                        </div>
+
+
+                    </div>
+                    {/* end of product container */}
+
+
+                    {/* product container */}
+                    <div className="product-container">
+
+                        <div className="pc-image-container">
+                            <img src={fillet} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
+                            Fillet
+                        </div>
+
+
+                    </div>
+                    {/* end of product container */}
+
+                    {/* product container */}
+                    <div className="product-container">
+
+                        <div className="pc-image-container">
+                            <img src={chickenmeat} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
+                            Chicken/Turkey
+                        </div>
+
+
+                    </div>
+                    {/* end of product container */}
+
+                    {/* product container */}
+                    <div className="product-container">
+
+                        <div className="pc-image-container">
+                            <img src={cw} alt="" className="pc-image" />
+
+                        </div>
+
+                        <div className="pc-">
                             Chicken Wings
-                        </p>
+                        </div>
 
 
                     </div>
+                    {/* end of product container */}
 
-
-
-
-                    <div data-aos="fade-up" className="product-container">
-
-                        <img src={hotdog} alt="" className="product-image h-[89%] " />
-
-                        <p className="product-text">
-                            Hotdog
-                        </p>
-
-
-                    </div>
-
-
-
-
-
-                    <div data-aos="fade-up" className="product-container">
-
-                        <img src={tfm} alt="" className="product-image h-[89%] " />
-
-                        <p className="product-text">
-                            Hotdog
-                        </p>
-
-
-                    </div>
 
                 </div>
 

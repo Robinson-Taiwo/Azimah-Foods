@@ -94,7 +94,7 @@ background-image: url(../assets/images/aboutfish.jpg);
 }
 
 .capitalize{
-    @apply desktop:text-[2rem] text-[2rem] font-extrabold text-[#2893Ea] wide:text-[3rem]
+    @apply desktop:text-[2rem] text-[2rem] font-extrabold text-[#5b5a5a] wide:text-[3rem]
 }
 
 .about-last-section{
