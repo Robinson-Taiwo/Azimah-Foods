@@ -7,19 +7,19 @@
   
 
 .afs{
-  @apply desktop:h-[85vh] flex desktop:flex-row relative flex-col w-[100vw] bg-[#f6eaea] h-[fit] desktop:pt-[0rem] pt-[3rem] px-[1rem] pb-[5rem] desktop:pb-[0rem] wide:h-[90vh]
+  @apply desktop:h-[85vh] flex desktop:flex-row relative flex-col w-[100vw] bg-[#f6eaea] h-[fit] desktop:pt-[0rem] pt-[3rem] px-[1rem] pb-[5rem] desktop:pb-[0rem] wide:h-[90vh] tablet:items-center tablet:justify-center 
 }
 
 .afs-content{
   /* font-family: "Montserrat", sans-serif; */
 
-  @apply  w-[100%]  desktop:max-w-[60%]  flex-col justify-center flex desktop:pl-[1.5rem] wide:pl-[3rem]
+  @apply  w-[100%]  desktop:max-w-[60%]  flex-col justify-center flex desktop:pl-[1.5rem] wide:pl-[3rem] tablet:items-center  tablet:text-center desktop:text-start desktop:items-start
 }
 
 /* bg-[#f6eaea] */
 
 .afs-content h1{
-  @apply desktop:text-[2.1rem] font-bold desktop:w-[90%] w-[100%] wide:w-[80%] text-[1.9rem] wide:text-[3.5rem]
+  @apply desktop:text-[2.1rem] font-bold desktop:w-[90%] w-[100%] wide:w-[80%] text-[1.9rem] wide:text-[3.5rem] tablet:w-[80%]
 }
 
 .afs-image{
@@ -29,7 +29,7 @@
 .afs-content h2{
   font-family: "Montserrat", sans-serif; 
 
-  @apply desktop:w-[80%] font-normal desktop:mt-[1rem] mt-[0.5rem] w-[100%] desktop:text-[1rem]  text-[0.9rem] wide:w-[60%] wide:text-[1.2rem]
+  @apply desktop:w-[80%] font-normal desktop:mt-[1rem] mt-[0.5rem] w-[100%] desktop:text-[1rem]  text-[0.9rem] tablet:w-[70%] wide:w-[60%] wide:text-[1.2rem]
  }
 
 .afs-cta{
@@ -38,21 +38,21 @@
 
 .afs-cta button{
   outline: 1px solid black ;
-  @apply bg-[white] text-black hover:text-white hover:bg-black desktop:px-[2rem] desktop:py-[0.5rem] rounded-sm  text-[0.9rem] desktop:text-[1rem] py-[0.5rem] px-[1.4rem] wide:px-[5rem] wide:py-[1rem] wide:font-bold wide:text-[1.1rem] transition-all
+  @apply bg-[white] text-black hover:text-white hover:bg-black desktop:px-[2rem] desktop:py-[0.5rem] rounded-sm  text-[0.9rem] desktop:text-[1rem] py-[0.5rem] px-[1.4rem] wide:px-[5rem] wide:py-[1rem] wide:font-bold wide:text-[1.1rem] transition-all tablet:py-[0.6rem] tablet:px-[2rem]
 }
 
 .afs-images{
-  @apply desktop:relative  w-[100%] desktop:grid grid-cols-2  desktop:max-w-[40%] place-items-center desktop:m-auto grid  mt-[3rem]
+  @apply desktop:relative  w-[100%] desktop:grid grid-cols-2  desktop:max-w-[40%] place-items-center desktop:m-auto grid  mt-[3rem] tablet:w-[63%]
 }
 
 
 .one-box, .two-box{
   border: 2px solid white ;
-  @apply  desktop:h-[10.5rem] h-[7rem] w-[8rem] desktop:w-[11rem] wide:w-[15rem] rounded-md shadow-md wide:h-[12rem]
+  @apply  desktop:h-[10.5rem] h-[7rem] w-[8rem] desktop:w-[11rem] wide:w-[15rem] rounded-md shadow-md wide:h-[12rem] tablet:h-[13rem] tablet:w-[14rem]
 }
 
 .one-box{
-  @apply desktop:h-[13rem] h-[9rem] w-[8rem] desktop:w-[10rem] wide:w-[15rem] wide:h-[19rem]
+  @apply desktop:h-[13rem] h-[9rem] w-[8rem] desktop:w-[10rem] wide:w-[15rem] wide:h-[19rem] tablet:h-[15rem] tablet:w-[13rem]
 }
 
 
@@ -127,31 +127,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
  }
 
 
-  /* .hero-section-image{
-  background-image: url(../assets/images/seafood.jpg); 
-  @apply h-[100%] w-[100%] bg-cover bg-center bg-no-repeat items-center flex justify-center relative wide:w-[90%] wide:left-[0] right-[0rem]
-  } */
-
-  /* .hero-section-image-container{
-   @apply desktop:flex items-center justify-center relative gap-[0rem] flex-col  w-[70%] h-[100%] phone:hidden 
-  } */
-/* 
-  .hero-section-image-container{
-    @apply relative
-  } */
-
-    /* .img-content{
-      @apply h-[10rem] w-[10rem] bg-center bg-cover bg-no-repeat rounded-[50%] absolute top-[1rem] right-[-2rem] ; 
-      background-image: url(../assets/images/rcm.jpg);
-      
-    }
-
-    .img-content-two{
-      @apply h-[10rem] w-[10rem] bg-center bg-cover bg-no-repeat rounded-[50%] absolute top-[12rem] right-[-2rem] ; 
-      background-image: url(../assets/images/seafood.jpg);
-      
-    } */
-
+  
   .ff-icon{
     @apply h-[4rem] w-[4rem]
   }
@@ -234,7 +210,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
   .ff-category{
     box-shadow: #f3dede 0px 5px 15px;
-    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[1rem] desktop:px-[2rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#f6eaea] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-125 transition-all phone:px-[0.3rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[0.5rem] sphone:gap-[0.1rem] text-center 
+    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[1rem] desktop:px-[2rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#f6eaea] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-125 transition-all phone:px-[0.3rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[0.5rem] sphone:gap-[0.1rem] text-center  bg-[#f1ebeb]
   }
  
   .ff-category p{
@@ -306,7 +282,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
   .asc-heading{
-    @apply desktop:text-[2.4em] font-bold  w-fit mt-[2rem] desktop:mt-[0rem] text-[#b39595]  text-[2rem]
+    font-family: "Montserrat", sans-serif;
+
+    @apply desktop:text-[2.4em] font-bold  w-fit mt-[2rem] desktop:mt-[0rem] text-[#b39595]  text-[2rem] wide:text-[4rem]
   }
 
   .asc-subheading{
@@ -320,7 +298,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   }
 
 .asc-text{
-  @apply text-[0.9rem]  desktop:w-[90%] leading-6  wide:w-[80%] phone:text-center tablet:w-[80%] desktop:text-center 
+  font-family: "Montserrat", sans-serif;
+
+  @apply text-[0.9rem]  desktop:w-[90%] leading-6   phone:text-center tablet:w-[80%] desktop:text-center wide:text-[1.1rem] wide:w-[70%]
 }
 
 
@@ -362,8 +342,8 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .asc-cta:hover {
-  box-shadow: inset 400px 0 0 0 #2893EA;
-  @apply text-white
+  box-shadow: inset 400px 0 0 0 black;
+  @apply text-white transition-all
 }
 
 
@@ -379,17 +359,17 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .gs-heading{
-  @apply wide:text-[4rem] text-[1.9rem] desktop:text-[4rem] font-bold  mb-[0.5rem] tablet:text-[3rem] text-[#b39595] 
+  @apply wide:text-[4rem] text-[1.9rem] desktop:text-[4rem] font-bold  mb-[0.5rem] tablet:text-[3rem] text-[#b39595] text-center mt-[2rem]
 }
 
 .galllery-subheading{
-  @apply text-center phone:w-[90%] desktop:w-[80%] text-[0.8rem] text-[#5b5a5a] mb-[2rem] wide:text-[1rem] tablet:w-[70%]  desktop:text-[0.95rem]
+  @apply text-center phone:w-[90%] desktop:w-[80%] text-[0.8rem] text-[#5b5a5a] mb-[2rem] wide:text-[1.1rem] tablet:w-[70%]  desktop:text-[0.95rem] 
 }
 
 
 
 .carousel{
-  @apply desktop:w-[80vw] desktop:h-[20%]  w-[90vw] h-[80%]
+  @apply desktop:w-[80vw] desktop:h-[20%]  w-[90vw] h-[80%] wide:flex wide:items-center wide:justify-center wide:w-[50vw]
 }
 
 
@@ -431,7 +411,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 .contact-subheading{
-  @apply text-[0.8rem] text-center text-[#f5efef] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%] wide:w-[40%] mb-[1rem]
+  @apply text-[0.8rem] text-center text-[#f5efef] mt-[0.5rem] desktop:text-[0.9rem] desktop:w-[70%] wide:w-[40%] mb-[1rem]  
 }
 
 
@@ -478,12 +458,12 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 
 .products-container{
-  @apply desktop:grid desktop:grid-cols-4 desktop:place-content-evenly desktop:px-[2rem] desktop:gap-y-[2rem] gap-2 desktop:py-[2rem] grid-cols-2 grid place-content-center px-[1rem]
+  @apply desktop:grid desktop:grid-cols-4 desktop:place-content-evenly desktop:px-[2rem] desktop:gap-y-[2rem] gap-2 desktop:py-[2rem] grid-cols-2 grid place-content-center px-[1rem] wide:place-items-center wide:gap-x-[1rem] tablet:grid-cols-3 tablet:place-items-center
 } 
 
 
 .product-container{
-  @apply desktop:h-[20rem] desktop:w-[14rem] sphone:h-[11rem] sphone:w-[8rem] w-[10rem] h-[11.5rem] shadow-lg shadow-[#b39595]
+  @apply desktop:h-[20rem] desktop:w-[14rem] sphone:h-[11rem] sphone:w-[8rem] w-[10rem] h-[11.5rem] shadow-lg shadow-[#b39595] wide:w-[18rem]
 }
 
 .pc-image-container{

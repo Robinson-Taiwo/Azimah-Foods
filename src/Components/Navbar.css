@@ -1,5 +1,5 @@
 .navbar-container{
-    @apply flex desktop:py-[1rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center   justify-between bg-[#f6eaea] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
+    @apply flex desktop:py-[1rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center   justify-between bg-[#f6eaea] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] tablet:px-[2rem] z-[1000]
 }
 
 .navbar-section-items{
@@ -22,7 +22,7 @@
 .navbar-section-logo{
     font-family: "GFS Didot", serif;
 
-    @apply desktop:text-[1.5rem] font-extrabold phone:text-[1rem] 
+    @apply desktop:text-[1.5rem] font-extrabold phone:text-[1rem] cursor-pointer
 }
 
 .ham-menu{

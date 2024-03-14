@@ -18,7 +18,9 @@ const Footer: React.FC = () => {
 
                     <div className="footer-first-header">
 
-                        <img src={x} className='footer-logo' alt="" />
+                        <h1 className="footer-logo">
+                            AZIMAH
+                        </h1>
 
 
                         <p className="footer-text">

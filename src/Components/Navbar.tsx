@@ -54,9 +54,9 @@ const Navbar: FC<NavbarProps> = ({ handleScrollToSection }) => {
     return (
         <div className={`navbar-container ${scrolled ? "isScrolled" : "navbar-container"}`} >
 
-            <div className="navbar-section-logo">
+            <Link to="/" className="navbar-section-logo">
                AZIMAH
-            </div>
+            </Link>
 
             <div className="ham-menu">
                 <img onClick={handleClicked} src={menu} alt="" className="menu-bar" />

@@ -445,7 +445,7 @@ const Home: React.FC<HomeProps> = () => {
 
                             <div className='cb-text-cont' >
                                 <p className="cb-text">
-                                    2nd Gate exist mandate market ilorin(ilorin Branch)
+                                    Azimah cold food email will be added in a bit
                                 </p>
                             </div>
 
@@ -487,7 +487,7 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
 
                         <div className="pc-">
-Kote
+                            Kote
                         </div>
 
 
@@ -504,7 +504,7 @@ Kote
                         </div>
 
                         <div className="pc-">
-Titus
+                            Titus
                         </div>
 
 
@@ -520,7 +520,7 @@ Titus
                         </div>
 
                         <div className="pc-">
-Hake
+                            Hake
                         </div>
 
 
@@ -536,7 +536,7 @@ Hake
                         </div>
 
                         <div className="pc-">
-Sussage
+                            Sussage
                         </div>
 
 

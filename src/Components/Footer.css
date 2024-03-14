@@ -13,7 +13,9 @@
   }
   
   .footer-logo{
-    @apply w-[5.94rem] h-[1.56rem] mb-[0.75rem]
+    font-family: "GFS Didot", serif;
+
+    @apply desktop:text-[1.5rem] font-extrabold phone:text-[1.4rem] cursor-pointer w-[5.49rem] 
   }
   
   .footer-first-section-col{
