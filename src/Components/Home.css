@@ -481,8 +481,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   @apply desktop:grid desktop:grid-cols-4 desktop:place-content-evenly desktop:px-[2rem] desktop:gap-y-[2rem] gap-2 desktop:py-[2rem] grid-cols-2 grid place-content-center px-[1rem]
 } 
 
+
 .product-container{
-  @apply desktop:h-[20rem] desktop:w-[14rem] w-[10rem] h-[11.5rem] shadow-lg shadow-[#b39595]
+  @apply desktop:h-[20rem] desktop:w-[14rem] sphone:h-[11rem] sphone:w-[8rem] w-[10rem] h-[11.5rem] shadow-lg shadow-[#b39595]
 }
 
 .pc-image-container{

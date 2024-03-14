@@ -116,7 +116,7 @@ const Home: React.FC<HomeProps> = () => {
 
                     <div className="afs-cta">
 
-                        <button data-aos="fade-right" data-aos-delay="500" >
+                        <button onClick={() => handleScrollToSection("section2")} data-aos="fade-right" data-aos-delay="500" >
                             About
                         </button>
                     </div>
