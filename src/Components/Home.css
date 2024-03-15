@@ -7,7 +7,7 @@
   
 
 .afs{
-  @apply desktop:h-[85vh] flex desktop:flex-row relative flex-col w-[100vw] bg-[#f6eaea] h-[fit] desktop:pt-[0rem] pt-[3rem] px-[1rem] pb-[5rem] desktop:pb-[0rem] wide:h-[90vh] tablet:items-center tablet:justify-center 
+  @apply desktop:h-[85vh] flex desktop:flex-row relative flex-col w-[100vw] bg-[#f6eaea] h-[fit] desktop:pt-[0rem] pt-[3rem] px-[1rem] pb-[5rem] desktop:pb-[0rem] wide:h-[90vh] tablet:items-center tablet:justify-center  items-center 
 }
 
 .afs-content{
@@ -63,7 +63,7 @@
 }
 
 .afs-images{
-  @apply desktop:relative  w-[100%] desktop:grid grid-cols-2  desktop:max-w-[40%] place-items-center desktop:m-auto grid  mt-[3rem] tablet:w-[63%]
+  @apply desktop:relative  w-[fit] gap-x-[15%] desktop:grid grid-cols-2  desktop:max-w-[40%] place-items-center desktop:m-auto grid  mt-[3rem] tablet:w-[63%] tablet:gap-x-[9%]
 }
 
 
