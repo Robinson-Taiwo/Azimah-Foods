@@ -32,13 +32,34 @@
   @apply desktop:w-[80%] font-normal desktop:mt-[1rem] mt-[0.5rem] w-[100%] desktop:text-[1rem]  text-[0.9rem] tablet:w-[70%] wide:w-[60%] wide:text-[1.2rem]
  }
 
+ .raw{
+  background-image: url(../assets/images/raw-fish.jpg);
+  @apply bg-center bg-cover bg-no-repeat
+ }
+
+ .bvrf{
+  background-image: url(../assets/images/bvrf.jpg);
+  @apply bg-center bg-cover bg-no-repeat
+ }
+
+
+ .aboutfish{
+  background-image: url(../assets/images/aboutfish.jpg);
+  @apply bg-center bg-cover bg-no-repeat
+ }
+
+ .tfm{
+  background-image: url(../assets/images/tfm.png);
+  @apply bg-center bg-cover bg-no-repeat
+ }
+
 .afs-cta{
   @apply desktop:mt-[1rem] desktop:pl-[1rem] mt-[1rem]   desktop:m-[0rem]
 }
 
 .afs-cta button{
   outline: 1px solid black ;
-  @apply bg-[white] text-black hover:text-white hover:bg-black desktop:px-[2rem] desktop:py-[0.5rem] rounded-sm  text-[0.9rem] desktop:text-[1rem] py-[0.5rem] px-[1.4rem] wide:px-[5rem] wide:py-[1rem] wide:font-bold wide:text-[1.1rem] transition-all tablet:py-[0.6rem] tablet:px-[2rem]
+  @apply bg-[white] text-black hover:text-white hover:bg-black desktop:px-[2rem] desktop:py-[0.5rem] rounded-sm  text-[0.9rem] desktop:text-[1rem] py-[0.5rem] px-[1.4rem] wide:px-[5rem] wide:py-[1rem] wide:font-bold wide:text-[1.1rem] transition-all tablet:py-[0.6rem] tablet:px-[2rem] shadow-md
 }
 
 .afs-images{
@@ -74,14 +95,7 @@
     @apply phone:h-[70vh] desktop:h-[100vh] bg-black bg-opacity-10 ;
   }
 
-/* ay
-overl
 
-bg-[rgb(11,24,35)]  bg-opacity-40*/
-
-
-
-  
 
   /* bg-[#2893EA] */
   /* #4cca6a */
@@ -97,7 +111,6 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
     @apply desktop:text-[2.5rem] wide:text-[4rem] w-[100%] font-extrabold  text-[#289EA]  phone:text-[1.7rem] desktop:w-[80vw] wide:w-[60vw] desktop:text-center tablet:text-center tablet:w-[60vw]
   /* text-[white] */
   }
-
 
   .hero-content-subheading{
  @apply w-[90%] phone:text-[0.85rem] desktop:text-[1.5rem] font-[black] wide:text-[1.4rem] wide:w-[50%] tablet:w-[70%] desktop:text-center desktop:w-[50vw] text-[#373232] tablet:text-center
@@ -126,14 +139,13 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   @apply  top-[0] z-[1000] w-[100%] 
  }
 
-
   
   .ff-icon{
     @apply h-[4rem] w-[4rem]
   }
 
   .categories-section{
-    /* background: linear-gradient(180deg, hsla(207, 96%, 71%, 1) 0%, hsla(0, 0%, 100%, 1) 22%); */
+   
     @apply w-[100vw] h-fit flex flex-col-reverse items-center  desktop:px-[3rem] phone:px-[1rem] relative phone:pt-[3rem]  desktop:pt-[10rem] mb-[9rem] wide:px-[4rem]  desktop:grid desktop:grid-cols-2
   }
 
@@ -167,11 +179,9 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 }
 
 
-
 .wm-imageb{
   @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-45 desktop:top-[4rem] phone:h-[5rem] phone:w-[5rem]  top-[1rem] phone:hidden desktop:flex 
 }
-
 
 .wm-imagec{
   @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-35 desktop:left-[9rem] rotate-12 desktop:bottom-[6rem] phone:h-[5rem] phone:w-[5rem] bottom-[1rem]
@@ -210,11 +220,15 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
   .ff-category{
     box-shadow: #f3dede 0px 5px 15px;
-    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[1rem] desktop:px-[2rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#f6eaea] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-125 transition-all phone:px-[0.3rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[0.5rem] sphone:gap-[0.1rem] text-center  bg-[#f1ebeb]
+    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[1rem] desktop:px-[2rem] rounded-md font-bold text-[#2893EA] text-[1rem] hover:bg-[#f6eaea] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-125 transition-all phone:px-[0.3rem] phone:py-[1.5rem] phone:gap-[0.5rem] sphone:py-[1rem] sphone:text-[1rem] sphone:px-[0.5rem] sphone:gap-[0.1rem] text-center  bg-[white] px-[0.5rem]
+  }
+
+  .cate{
+    @apply w-[80%]
   }
  
   .ff-category p{
-    @apply text-[0.8rem] sphone:w-[90%] wide:text-[1.02rem] text-black font-[black] text-center sphone:text-[0.6rem] phone:w-[9rem]; 
+    @apply text-[0.8rem] sphone:w-[80%] wide:text-[1.02rem] text-black font-[black] text-center sphone:text-[0.6rem] phone:w-[85%]; 
   }
 
   .ff-category h2{
@@ -227,8 +241,6 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
     @apply sphone:text-[0.7rem] phone:text-[0.7rem] text-black font-normal desktop:text-[1rem]
   }
 
-
-  
     .body {
       margin: 0;
       padding: 0;
@@ -309,10 +321,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
     @apply desktop:w-[40%] w-[100%] tablet:w-[80%]  h-[100%] bg-center bg-cover bg-no-repeat hidden desktop:flex
   }
 
-  /* .asc-cta{
-    
-    @apply text-[0.9rem] desktop:text-[1rem] desktop:w-fit bg-[#00ffbf] desktop:px-[1rem] desktop:py-[0.5rem];
-  } */
+  
 
   .logistics{
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;    @apply h-[100%] rounded-3xl w-[100%]
@@ -324,7 +333,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
 
 .asc-cta {
   color: black;
-  border: 2px solid black;
+  border: 1.5px solid black;
   border-radius: 0px;
   padding: 18px 36px;
   display: inline-block;
@@ -338,7 +347,7 @@ bg-[rgb(11,24,35)]  bg-opacity-40*/
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-  @apply phone:w-fit px-[0.7rem] py-[0.8rem] text-[0.7rem] desktop:text-[0.9rem] wide:text-[1rem]  bg-white rounded-sm desktop:mt-[1rem]
+  @apply phone:w-fit px-[0.7rem] py-[0.8rem] text-[0.7rem] desktop:text-[0.9rem] wide:text-[1rem]  bg-white rounded-sm desktop:mt-[1rem] shadow-md
 }
 
 .asc-cta:hover {

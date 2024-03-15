@@ -73,14 +73,12 @@ background-image: url(../assets/images/aboutfish.jpg);
 }
 
 
-
-
 .the-journey{
     @apply desktop:w-[70vw] items-end justify-end flex wide:w-[50%] sphone:flex-col w-[85%] mb-[4rem] desktop:mb-[0rem]
 }
 
 .the-journey p{ 
-    @apply desktop:w-[70%] font-normal text-[0.9rem] desktop:pr-[2rem]  leading-6 wide:text-[1.1rem] wide:leading-8 text-justify desktop:text-start
+    @apply desktop:w-[70%] font-normal text-[0.9rem] desktop:pr-[2rem]  leading-6 wide:text-[1.1rem] wide:leading-8 text-justify desktop:text-start mt-[2rem]
 }
 
 

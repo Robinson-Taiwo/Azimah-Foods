@@ -5,17 +5,13 @@ import meat from '../assets/icons/meat.svg';
 import down from '../assets/icons/down.svg';
 import fish from '../assets/icons/fish.svg';
 import turkey from '../assets/icons/turkey.svg';
-// import fs from '../assets/images/fs.png';
-// import hd from '../assets/images/hd.png';
-import raw from '../assets/images/raw-fish.jpg';
-import bvrf from '../assets/images/bvrf.jpg';
-import aboutfish from '../assets/images/aboutfish.jpg';
-
-
+// import raw from '../assets/images/raw-fish.jpg';
+// import bvrf from '../assets/images/bvrf.jpg';
+// import aboutfish from '../assets/images/aboutfish.jpg';
 import phone from "../assets/icons/phone.svg"
 import locate from "../assets/icons/locate.svg"
 import mail from "../assets/icons/mail.svg"
-import tfm from '../assets/images/tfm.png';
+// import tfm from '../assets/images/tfm.png';
 import image1 from '../assets/images/image1.jpeg';
 import image2 from '../assets/images/image2.jpeg';
 import image3 from '../assets/images/image3.jpeg';
@@ -39,19 +35,15 @@ import sussage from '../assets/images/sussage.jpg';
 import hake from '../assets/images/hake.jpg';
 import gizzard from '../assets/images/gizzard.jpg';
 import cw from '../assets/images/cw.png';
-
 import fillet from '../assets/images/fillet.webp';
 import './Home.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-
 import { Carousel } from 'antd';
-
 
 // Initialize AOS with optional configuration
 AOS.init({
@@ -90,9 +82,6 @@ const Home: React.FC<HomeProps> = () => {
         }
     };
 
-
-
-
     return (
         <div className='home-container'>
             <div className="navbar">
@@ -113,7 +102,6 @@ const Home: React.FC<HomeProps> = () => {
                         Delight your senses with an exquisite array of frozen treasures from succulent chicken to ocean-fresh seafood.
                     </h2>
 
-
                     <div className="afs-cta">
 
                         <button onClick={() => handleScrollToSection("section2")} data-aos="fade-right" data-aos-delay="500" >
@@ -124,25 +112,23 @@ const Home: React.FC<HomeProps> = () => {
 
                 </div>
 
-
                 <div className="afs-images">
 
-                    <div data-aos="zoom-in" data-aos-delay="600" className="one-box">
-                        <img className="afs-image" src={bvrf} alt="" />
+                    <div data-aos="zoom-in" data-aos-delay="600" className="one-box bvrf ">
+                        {/* <img className="afs-image " src={bvrf} alt="" /> */}
                     </div>
-                    <div data-aos="zoom-in" data-aos-delay="700" className="two-box">
-                        <img className="afs-image" src={raw} alt="" />
+                    <div data-aos="zoom-in" data-aos-delay="700" className="two-box raw ">
+                        {/* <img className="afs-image" src={raw} alt="" /> */}
 
                     </div>
-                    <div data-aos="zoom-in" data-aos-delay="800" className="two-box">
-                        <img className="afs-image" src={aboutfish} alt="" />
+                    <div data-aos="zoom-in" data-aos-delay="800" className="two-box  aboutfish">
+                        {/* <img className="afs-image" src={aboutfish} alt="" /> */}
 
                     </div>
-                    <div data-aos="zoom-in" data-aos-delay="900" className="one-box">
-                        <img className="afs-image" src={tfm} alt="" />
+                    <div data-aos="zoom-in" data-aos-delay="900" className="one-box tfm ">
+                        {/* <img className="afs-image" src={tfm} alt="" /> */}
 
                     </div>
-
 
                 </div>
 
@@ -154,9 +140,7 @@ const Home: React.FC<HomeProps> = () => {
 
                 </div>
 
-
             </section>
-
 
 
             <div className="blur-blue">
@@ -165,16 +149,6 @@ const Home: React.FC<HomeProps> = () => {
 
 
             <section id="section1" ref={section1Ref} className="categories-section">
-
-
-
-                {/* <img src={appetite} alt="" className="wm-image2" />
-
-                <img src={fs} alt="" className="wm-image3" /> */}
-
-
-
-
 
 
 
@@ -199,7 +173,7 @@ const Home: React.FC<HomeProps> = () => {
                             Sussages
                         </h2>
 
-                        <p className='cate' >fresh sussage at your reach</p>
+                        <p className='cate' >fresh sussages at your reach</p>
                     </li>
 
                     <li className="ff-category" data-aos="fade-up">
@@ -230,8 +204,6 @@ const Home: React.FC<HomeProps> = () => {
 
 
 
-
-
                 <div className="cs-one">
 
 
@@ -244,9 +216,6 @@ const Home: React.FC<HomeProps> = () => {
                         Discover Azimah's premium selection of frozen meats. From tender chicken to fresh fish and flavorful sausages, we provide high-quality frozen foods that are convenient and delicious. Sourced from trusted suppliers and rigorously quality-checked, our products ensure top-notch taste every time.
                     </h4>
                 </div>
-
-
-
 
             </section>
 
@@ -347,11 +316,7 @@ const Home: React.FC<HomeProps> = () => {
                     </Carousel>
                 </>
 
-
-
             </div>
-
-
 
 
             <section id="section4" className="contacts-section">
@@ -536,15 +501,12 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
 
                         <div className="pc-">
-                            Sussage
+                            Sussages
                         </div>
 
 
                     </div>
                     {/* end of product container */}
-
-
-
 
 
 
@@ -615,16 +577,10 @@ const Home: React.FC<HomeProps> = () => {
                     </div>
                     {/* end of product container */}
 
-
                 </div>
 
 
-
             </section>
-
-
-
-
 
             <Footer />
 
