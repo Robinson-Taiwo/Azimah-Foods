@@ -29,7 +29,6 @@ import image14 from '../assets/images/image14.jpeg';
 import image15 from '../assets/images/image15.jpeg';
 import titus from '../assets/images/titus.jpg';
 import kote from '../assets/images/kote.jpg';
-// import appetite from '../assets/images/appetite.png';
 import chickenmeat from '../assets/images/chickenmeat.jpg';
 import sussage from '../assets/images/sussage.jpg';
 import hake from '../assets/images/hake.jpg';
