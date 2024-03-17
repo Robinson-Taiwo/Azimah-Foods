@@ -169,10 +169,10 @@ const Home: React.FC<HomeProps> = () => {
                         <img src={meat} alt="chicken-icon" className="ff-icon" />
 
                         <h2>
-                            Sussages
+                            Sausage
                         </h2>
 
-                        <p className='cate' >fresh sussages at your reach</p>
+                        <p className='cate' >fresh sausages at your reach</p>
                     </li>
 
                     <li className="ff-category" data-aos="fade-up">
@@ -500,7 +500,7 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
 
                         <div className="pc-">
-                            Sussages
+                            Sausage
                         </div>
 
 

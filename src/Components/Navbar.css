@@ -16,7 +16,7 @@
 }
 
 .navbar-item-contact{
-    @apply desktop:bg-[black] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer  phone:w-[50%] desktop:w-[100%]    phone:items-center phone:justify-center flex phone:bg-[black] desktop:text-[white] desktop:font-bold desktop:text-[0.9rem] phone:text-[white]
+    @apply desktop:bg-[black] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[rgb(251,252,253)] cursor-pointer  phone:w-[50%] desktop:w-[100%]    phone:items-center phone:justify-center flex phone:bg-[black] desktop:text-[white] desktop:font-bold desktop:text-[0.9rem] phone:text-[white]
 }
 
 .navbar-section-logo{
