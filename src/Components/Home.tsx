@@ -381,7 +381,7 @@ const Home: React.FC<HomeProps> = () => {
                                     hop on a call and get to us right away. we are always available to listen
                                 </p>
 
-                                <p className="cb-text ">
+                                <p className="cb-text font-bold ">
                                     +234 6707653444
                                 </p>
 
@@ -408,8 +408,13 @@ const Home: React.FC<HomeProps> = () => {
                             </div>
 
                             <div className='cb-text-cont' >
-                                <p className="cb-text">
-                                    Azimah cold food email will be added in a bit
+
+                                <p className="cb-text ">
+                                    We are one E-mail away from hearing what you have to say
+                                </p>
+
+                                <p className="cb-text font-bold ">
+                                    <a href="mailto:admin@azimahltd.com.ng">admin@azimahltd.com.ng</a>
                                 </p>
                             </div>
 
